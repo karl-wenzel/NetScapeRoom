@@ -1747,7 +1747,7 @@ MonoBehaviour:
   StartMinigames:
   - EventName: StartMinigameExample
     MinigamePrefab: {fileID: 3424982659053267909, guid: 0d4d809e7bcd66949bcba44a5e497f70, type: 3}
-  PlayerIndex: 0
+  PlayerIndex: 2
 --- !u!1 &1036028189
 GameObject:
   m_ObjectHideFlags: 0

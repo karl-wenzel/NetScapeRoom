@@ -18,13 +18,15 @@ public class SpawnPositionController : MonoBehaviour
         PlayerWorldPositions = new Vector3[PlayerPositions.Length];
         for (int i = 0; i < PlayerPositions.Length; i++)
         {
-            PlayerWorldPositions[i] = Camera.main.ScreenToWorldPoint(PlayerWorldPositions[i]);
+            PlayerWorldPositions[i] = Camera.main.ScreenToWorldPoint(PlayerPositions[i].position);
+            print("world point: " + PlayerWorldPositions[i]);
+
         }
     }
 
     public Vector3 GetPlayerSpawnPositionInWorldCoordinates(int PlayerIndex) {
         if (PlayerIndex < PlayerWorldPositions.Length) {
-            return PlayerWorldPositions[PlayerIndex];
+            return new Vector3(PlayerWorldPositions[PlayerIndex].x, PlayerWorldPositions[PlayerIndex].y, 0f);
         }
         return default;
     }
