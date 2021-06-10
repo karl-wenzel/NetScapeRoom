@@ -8,6 +8,7 @@ public class MinigameWindow : MonoBehaviour
     bool Dragging = false;
     Vector3 StartMousePosition;
     Vector3 StartWindowPosition;
+    public Animui.PlopUpSprite SpritePlopUpAnimator;
 
     int RotationCount = 0;
     public void Rotate() {
@@ -19,7 +20,8 @@ public class MinigameWindow : MonoBehaviour
     public void Quit()
     {
         Debug.Log("Closing MinigameWindow " + MinigameName + ".");
-        Destroy(gameObject);
+        SpritePlopUpAnimator.PlayAnimation(1);
+        Destroy(gameObject, 0.2f);
     }
 
     public void BeginDrag() {
@@ -37,8 +39,6 @@ public class MinigameWindow : MonoBehaviour
     void Update()
     {
         if (Dragging) {
-            print(StartWindowPosition);
-            print(Camera.main);
             transform.position = StartWindowPosition + (Camera.main.ScreenToWorldPoint(Input.mousePosition) - StartMousePosition);
         }
     }

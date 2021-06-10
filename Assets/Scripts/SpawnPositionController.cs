@@ -19,8 +19,6 @@ public class SpawnPositionController : MonoBehaviour
         for (int i = 0; i < PlayerPositions.Length; i++)
         {
             PlayerWorldPositions[i] = Camera.main.ScreenToWorldPoint(PlayerPositions[i].position);
-            print("world point: " + PlayerWorldPositions[i]);
-
         }
     }
 

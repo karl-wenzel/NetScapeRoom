@@ -10,6 +10,10 @@ public class HideOnGameStart : MonoBehaviour
         {
             r.enabled = false;
         }
+        foreach (UnityEngine.UI.Image i in gameObject.GetComponentsInChildren<UnityEngine.UI.Image>())
+        {
+            i.enabled = false;
+        }
     }
 
 }

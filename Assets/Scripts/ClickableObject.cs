@@ -19,6 +19,11 @@ public class ClickableObject : MonoBehaviour
                 (MiniGameEvent.MinigamePrefab, 
                 SpawnPositionController.spawnPositionControllerInstance.GetPlayerSpawnPositionInWorldCoordinates(PlayerIndex), 
                 Quaternion.identity);
+            MinigameWindow NewMinigameWindow = NewMinigame.GetComponent<MinigameWindow>();
+            for (int i = 0; i < PlayerIndex; i++)
+            {
+                NewMinigameWindow.Rotate();
+            }
         }
     }
 }
