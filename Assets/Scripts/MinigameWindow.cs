@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +8,11 @@ public class MinigameWindow : MonoBehaviour
     bool Dragging = false;
     Vector3 StartMousePosition;
     Vector3 StartWindowPosition;
+
+    [Space]
+    [Header("↓ reference, dont change ↓")]
     public Animui.PlopUpSprite SpritePlopUpAnimator;
+    public MinigameController minigameController;
 
     int RotationCount = 0;
     public void Rotate() {

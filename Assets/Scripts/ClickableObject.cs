@@ -24,6 +24,8 @@ public class ClickableObject : MonoBehaviour
             {
                 NewMinigameWindow.Rotate();
             }
+            MinigameController NewMinigameController = NewMinigameWindow.minigameController;
+            NewMinigameController.MinigameSource = gameObject;
         }
     }
 }

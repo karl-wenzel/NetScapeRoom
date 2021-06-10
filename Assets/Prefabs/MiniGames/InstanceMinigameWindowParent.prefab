@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3424982659053267908}
   - component: {fileID: 3424982659053267907}
+  - component: {fileID: 6650453201877920748}
   m_Layer: 0
   m_Name: InstanceMinigameWindowParent
   m_TagString: Untagged
@@ -46,6 +47,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinigameName: Unnamed
   SpritePlopUpAnimator: {fileID: 5086448916108857706}
+  minigameController: {fileID: 6650453201877920748}
+--- !u!114 &6650453201877920748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3424982659053267909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c31aa7f0862943418fd3c4675217f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NotifyMe: []
+  window: {fileID: 3424982659053267907}
 --- !u!1 &3424982659182643373
 GameObject:
   m_ObjectHideFlags: 0
