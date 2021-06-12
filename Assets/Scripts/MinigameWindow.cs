@@ -32,6 +32,7 @@ public class MinigameWindow : MonoBehaviour
     public void BeginDrag() {
         Debug.Log("Begin Dragging MinigameWindow " + MinigameName + ".");
         Dragging = true;
+        SpritePlopUpAnimator.PlayAnimation(2);
         StartMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         StartWindowPosition = transform.position;
     }

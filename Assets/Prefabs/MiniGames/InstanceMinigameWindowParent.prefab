@@ -225,6 +225,41 @@ MonoBehaviour:
       m_RotationOrder: 0
     TimeTotal: 0.2
     SnapToBaseSize: 0
+  - SizeOverTime:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0.4221591
+        outSlope: 0.4221591
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.26666668
+        value: 1.1125758
+        inSlope: -0.26350594
+        outSlope: -0.26350594
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.2556818
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: -0.1535124
+        outSlope: -0.1535124
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    TimeTotal: 0.1
+    SnapToBaseSize: 1
   unscaledTime: 0
   PlayOnStart: 1
 --- !u!114 &938530781917704569
