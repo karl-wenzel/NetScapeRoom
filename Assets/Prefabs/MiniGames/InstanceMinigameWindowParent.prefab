@@ -48,6 +48,7 @@ MonoBehaviour:
   MinigameName: Unnamed
   SpritePlopUpAnimator: {fileID: 5086448916108857706}
   minigameController: {fileID: 6650453201877920748}
+  rotater: {fileID: 938530781917704569}
 --- !u!114 &6650453201877920748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,6 +63,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NotifyMe: []
   window: {fileID: 3424982659053267907}
+  MinigameSource: {fileID: 0}
 --- !u!1 &3424982659182643373
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,6 +75,7 @@ GameObject:
   - component: {fileID: 3424982659182643372}
   - component: {fileID: 3424982659182643371}
   - component: {fileID: 5086448916108857706}
+  - component: {fileID: 938530781917704569}
   m_Layer: 0
   m_Name: MinigameBackground
   m_TagString: Untagged
@@ -224,6 +227,55 @@ MonoBehaviour:
     SnapToBaseSize: 0
   unscaledTime: 0
   PlayOnStart: 1
+--- !u!114 &938530781917704569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3424982659182643373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50eb9830bc0abde4eaf3331287745459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimationStack:
+  - RotationAnimation:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 4.209677
+        outSlope: 4.209677
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.16812819
+      - serializedVersion: 3
+        time: 0.28492555
+        value: 1.0456133
+        inSlope: -0.9629743
+        outSlope: -0.9629743
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.18423413
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: -0.06378817
+        outSlope: -0.06378817
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    TimeTotal: 0.1
+    SnapToTargetRotation: 1
+  unscaledTime: 0
 --- !u!1 &3424982659580022258
 GameObject:
   m_ObjectHideFlags: 0

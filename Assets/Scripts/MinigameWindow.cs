@@ -13,12 +13,13 @@ public class MinigameWindow : MonoBehaviour
     [Header("↓ reference, dont change ↓")]
     public Animui.PlopUpSprite SpritePlopUpAnimator;
     public MinigameController minigameController;
+    public Animui.RotateAnimation rotater;
 
     int RotationCount = 0;
     public void Rotate() {
         RotationCount++;
         Debug.Log("Rotating MinigameWindow " + MinigameName + " 90 Degrees.");
-        transform.eulerAngles = new Vector3(0f, 0f, (RotationCount % 4) * 90f);
+        rotater.TransitionToRotation(0, new Vector3(0f, 0f, (RotationCount % 4) * 90f));
     }
 
     public void Quit()
