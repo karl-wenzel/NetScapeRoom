@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Animui
 {
@@ -7,8 +8,7 @@ namespace Animui
     /// <summary>
     /// Attach this component to a sprite to control its size via a curve. Use this e.g. for a nice spawn effect.
     /// </summary>
-    [RequireComponent(typeof(Sprite))]
-    public class PlopUpSprite : MonoBehaviour
+    public class PlopUpGraphical : MonoBehaviour
     {
         [System.Serializable]
         public class AnimationStackEntry {
@@ -53,7 +53,6 @@ namespace Animui
         /// </summary>
         /// <param name="Index">The animation curve to be played</param>
         IEnumerator PlopUpRoutine(int Index) {
-            Sprite s = GetComponent<Sprite>();
             Vector3 endSize = transform.localScale;
             float startTime = unscaledTime ? Time.realtimeSinceStartup : Time.time;
             while ((unscaledTime ? Time.realtimeSinceStartup : Time.time) < startTime + AnimationStack[Index].TimeTotal) {
