@@ -9,6 +9,8 @@ public class MinigameController : MonoBehaviour
     [Tooltip("Sends 'StartMinigame' 'FailedMinigame' 'SuccessfulMinigame' and 'QuitMinigame'")]
     public GameObject[] NotifyMe;
     bool AlreadyQuit;
+    [Tooltip("This specifies how long the minigame waits before quitting after successful run")]
+    public float WaitBeforeQuitting = 0f;
 
     [Space]
     [Header("↓ reference, dont change ↓")]
@@ -44,6 +46,11 @@ public class MinigameController : MonoBehaviour
             NotifyObj.SendMessage("SuccessfulMinigame", SendMessageOptions.DontRequireReceiver);
         }
         MinigameSource.SendMessage("SuccessfulMinigame", SendMessageOptions.DontRequireReceiver);
+        StartCoroutine(DelayQuitting());
+    }
+
+    public IEnumerator DelayQuitting() {
+        yield return new WaitForSeconds(WaitBeforeQuitting);
         QuitMinigame();
     }
 
