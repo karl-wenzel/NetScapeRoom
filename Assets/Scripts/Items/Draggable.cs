@@ -12,13 +12,14 @@ public class Draggable : MonoBehaviour
 
     public float DragScaleMultiplier;
 
-    [Header("Item Inspector Prefab")]
+    [Header("Item Inspector")]
     public GameObject inspector;
+    public string Description;
 
 
     private Vector3 StartMousePosition;
     private Vector3 StartWindowPosition;
-    private Vector3 TargetPosition;
+    public Vector3 TargetPosition;
     private Vector3 LastPosition;
 
     private bool IsDragging = false;
@@ -41,14 +42,23 @@ public class Draggable : MonoBehaviour
 
     public void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, TargetPosition, Time.deltaTime * DragSpeed);
+        transform.localPosition = Vector3.Lerp(transform.localPosition, TargetPosition, Time.deltaTime * DragSpeed);
         transform.localScale = Vector3.Lerp(transform.localScale, CurrentScale, Time.deltaTime * ScaleSpeed);
+    }
+
+    public void SetPosition(Vector3 pos)
+    {
+        transform.position = pos;
+        TargetPosition = pos;
     }
 
     public void Click()
     {
-        Instantiate(inspector, new Vector3(0f, -3f, 0f), Quaternion.identity);
-        Debug.Log("Instantiated item inspector " + inspector.name);
+
+            GameObject newInspector = Instantiate(inspector, new Vector3(0, 0, 0), Quaternion.identity);
+            newInspector.GetComponent<HoldsText>().SetDescription(Description);
+            newInspector.transform.SetParent(GameObject.Find("Canvas").transform, false);
+
     }
 
     public void BeginDrag()
@@ -79,12 +89,12 @@ public class Draggable : MonoBehaviour
 
         IsDragging = false;
 
-        if (IsSelectingItemSlot && SelectedItemSlot != null)
+        if (IsSelectingItemSlot)
         {
             ItemSlotManager ItemSlot = SelectedItemSlot.GetComponent<ItemSlotManager>();
-            if (ItemSlot.AcceptsNewItem(gameObject))
+            if (ItemSlot.AcceptsNewItem(this))
             {
-                ItemSlot.AddItem(gameObject);
+                ItemSlot.AddItem(this);
                 TargetPosition = SelectedItemSlot.transform.position;
                 IsColliding = false;
             }
@@ -105,18 +115,15 @@ public class Draggable : MonoBehaviour
     }
 
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        IsColliding = true;
+
         if (collision.CompareTag("ItemSlot"))
         {
             IsSelectingItemSlot = true;
             SelectedItemSlot = collision;
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        IsColliding = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -126,13 +133,9 @@ public class Draggable : MonoBehaviour
         if (collision.CompareTag("ItemSlot"))
         {
             ItemSlotManager ItemSlot = SelectedItemSlot.GetComponent<ItemSlotManager>();
-
-            if (ItemSlot.ContainsItem(gameObject))
-            {
-                ItemSlot.RemoveItem();
-                IsSelectingItemSlot = false;
-                SelectedItemSlot = null;
-            }
+            ItemSlot.RemoveItem();
+            IsSelectingItemSlot = false;
+            SelectedItemSlot = null;
         }
     }
 
