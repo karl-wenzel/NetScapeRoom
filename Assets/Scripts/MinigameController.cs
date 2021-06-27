@@ -35,7 +35,7 @@ public class MinigameController : MonoBehaviour
         {
             NotifyObj.SendMessage("FailedMinigame", SendMessageOptions.DontRequireReceiver);
         }
-        MinigameSource.SendMessage("FailedMinigame", SendMessageOptions.DontRequireReceiver);
+        if (MinigameSource != null) MinigameSource.SendMessage("FailedMinigame", SendMessageOptions.DontRequireReceiver);
         QuitMinigame();
     }
 
@@ -45,7 +45,7 @@ public class MinigameController : MonoBehaviour
         {
             NotifyObj.SendMessage("SuccessfulMinigame", SendMessageOptions.DontRequireReceiver);
         }
-        MinigameSource.SendMessage("SuccessfulMinigame", SendMessageOptions.DontRequireReceiver);
+        if (MinigameSource != null) MinigameSource.SendMessage("SuccessfulMinigame", SendMessageOptions.DontRequireReceiver);
         StartCoroutine(DelayQuitting());
     }
 
@@ -61,7 +61,7 @@ public class MinigameController : MonoBehaviour
         {
             NotifyObj.SendMessage("QuitMinigame", SendMessageOptions.DontRequireReceiver);
         }
-        MinigameSource.SendMessage("QuitMinigame", SendMessageOptions.DontRequireReceiver);
+        if (MinigameSource != null) MinigameSource.SendMessage("QuitMinigame", SendMessageOptions.DontRequireReceiver);
         window.Quit();
     }
 }
