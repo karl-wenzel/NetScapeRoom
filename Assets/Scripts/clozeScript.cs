@@ -7,9 +7,9 @@ using UnityEngine.UI;
 public class clozeScript : MonoBehaviour
 {
 
-    public TextMeshProUGUI output;
+    public MinigameController controller;
 
-    public TextMeshProUGUI underline;
+    public TextMeshProUGUI output;
 
     public Color redColor;
 
@@ -192,6 +192,8 @@ public class clozeScript : MonoBehaviour
             reaction_1(answer_3, Dropdown_3);
             reaction_1(answer_4, Dropdown_4);
             reaction_1(answer_5, Dropdown_5);
+
+            controller.SuccessfulMinigame();
         } else
         {
             output.text = "Leider falsch. Versuch es noch einmal!";
