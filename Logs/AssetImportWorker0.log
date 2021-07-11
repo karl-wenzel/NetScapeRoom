@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.1052; Version 2009; 64bit' Language: 'de' Physical Memory: 8107 MB
+OS: 'Windows 10 Home; OS build 19042.1083; Version 2009; 64bit' Language: 'de' Physical Memory: 8107 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ C:/Users/Jakob Arnold/Desktop/Studium-nichtCloud/Semester/04/Psychologie und Did
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51910
+55481
 Successfully changed project path to: C:/Users/Jakob Arnold/Desktop/Studium-nichtCloud/Semester/04/Psychologie und Didaktik/prototyp/NetScapeRoom
 C:/Users/Jakob Arnold/Desktop/Studium-nichtCloud/Semester/04/Psychologie und Didaktik/prototyp/NetScapeRoom
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 59.23 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 59.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -35,603 +35,535 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004149 seconds.
+Registered in 0.002439 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 54.95 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 50.94 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.489 seconds
+- Completed reload, in  6.093 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.014116 seconds.
+Registered in 0.026252 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 46.09 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 46.96 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.474 seconds
+- Completed reload, in  1.406 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2116 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.4 MB.
-System memory in use after: 96.5 MB.
-
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2558.
-Total: 2.686500 ms (FindLiveObjects: 0.234100 ms CreateObjectMapping: 0.078600 ms MarkObjects: 2.259900 ms  DeleteObjects: 0.113200 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scripts/NeuronDragMinigame.cs
-  artifactKey: Guid(5c84ab5f024b59740b754f5f2878ceca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/NeuronDragMinigame.cs using Guid(5c84ab5f024b59740b754f5f2878ceca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e554830a938fa9a9fffc9441774f8ce0') in 0.041168 seconds
-  Import took 0.044849 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007723 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.430 seconds
-Platform modules already initialized, skipping
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
 Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 94.6 MB.
-System memory in use after: 94.8 MB.
+Unloading 2120 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.5 MB.
+System memory in use after: 96.6 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2562.
-Total: 2.851400 ms (FindLiveObjects: 0.319400 ms CreateObjectMapping: 0.073700 ms MarkObjects: 2.436200 ms  DeleteObjects: 0.020700 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2562.
+Total: 2.561100 ms (FindLiveObjects: 0.206800 ms CreateObjectMapping: 0.081600 ms MarkObjects: 2.190200 ms  DeleteObjects: 0.081100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 593.348558 seconds.
-  path: Assets/Scripts/NeuronDragMinigame.cs
-  artifactKey: Guid(5c84ab5f024b59740b754f5f2878ceca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/NeuronDragMinigame.cs using Guid(5c84ab5f024b59740b754f5f2878ceca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdd40087966bfdd42f24177013b5184f') in 0.018677 seconds
-  Import took 0.028580 seconds .
+  path: Assets/Scripts/NeuronDragSignal.cs
+  artifactKey: Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NeuronDragSignal.cs using Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdd81c93c9d830cb22b5aeae427131cf') in 0.043909 seconds
+  Import took 0.048682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000446 seconds.
+  path: Assets/Scripts/NeuronDragNodes.cs
+  artifactKey: Guid(3976f752fb365e74f8d3a6ae41519bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NeuronDragNodes.cs using Guid(3976f752fb365e74f8d3a6ae41519bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eefb1a0c92f86ea46bf227b06594325c') in 0.018891 seconds
+  Import took 0.025685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.645526 seconds.
+  path: Assets/Scripts/Items/DraggableUINeuron.cs
+  artifactKey: Guid(be66cf519758a124eb5c62f069aa4df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Items/DraggableUINeuron.cs using Guid(be66cf519758a124eb5c62f069aa4df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66f2ad68bad79ac49fef6c3fcd880f41') in 0.014352 seconds
+  Import took 0.028615 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008998 seconds.
+Registered in 0.004793 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.212 seconds
+- Completed reload, in  1.552 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 94.7 MB.
 System memory in use after: 94.8 MB.
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2566.
-Total: 2.584800 ms (FindLiveObjects: 0.230200 ms CreateObjectMapping: 0.071400 ms MarkObjects: 2.235700 ms  DeleteObjects: 0.046500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 73.293725 seconds.
-  path: Assets/Scripts/NeuronDragMinigame.cs
-  artifactKey: Guid(5c84ab5f024b59740b754f5f2878ceca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/NeuronDragMinigame.cs using Guid(5c84ab5f024b59740b754f5f2878ceca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee648dafa644333d97005556579f0202') in 0.014684 seconds
-  Import took 0.020025 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.031615 seconds.
-  path: Assets/Scripts/NeuronDragMinigame.cs
-  artifactKey: Guid(5c84ab5f024b59740b754f5f2878ceca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/NeuronDragMinigame.cs using Guid(5c84ab5f024b59740b754f5f2878ceca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee648dafa644333d97005556579f0202') in 0.005506 seconds
-  Import took 0.012089 seconds .
+Total: 2.879500 ms (FindLiveObjects: 0.207900 ms CreateObjectMapping: 0.071400 ms MarkObjects: 2.549400 ms  DeleteObjects: 0.049800 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004825 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.681 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 94.7 MB.
-System memory in use after: 94.8 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2570.
-Total: 3.066000 ms (FindLiveObjects: 0.394700 ms CreateObjectMapping: 0.160000 ms MarkObjects: 2.483900 ms  DeleteObjects: 0.025500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 83.599879 seconds.
-  path: Assets/Scripts/Items/Draggable.cs
-  artifactKey: Guid(fdac8a8aa685b8546a58dd20849e11a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Items/Draggable.cs using Guid(fdac8a8aa685b8546a58dd20849e11a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc314d2f32db85d80b30b533d4488fe') in 0.018251 seconds
-  Import took 0.025831 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 142.672784 seconds.
-  path: Assets/Prefabs/ItemInspectors/NoteInspector.prefab
-  artifactKey: Guid(12bbeda09ab9ecc46b5c73f9512d2307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ItemInspectors/NoteInspector.prefab using Guid(12bbeda09ab9ecc46b5c73f9512d2307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19ca7ccfe377509b0cd261993cbc449f') in 0.184531 seconds
-  Import took 0.191582 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004071 seconds.
-  path: Assets/Prefabs/ItemInspectors/NoteInspector.prefab
-  artifactKey: Guid(12bbeda09ab9ecc46b5c73f9512d2307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ItemInspectors/NoteInspector.prefab using Guid(12bbeda09ab9ecc46b5c73f9512d2307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19ca7ccfe377509b0cd261993cbc449f') in 0.046716 seconds
-  Import took 0.055574 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004711 seconds.
+Registered in 0.004967 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.676 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 94.8 MB.
-System memory in use after: 95.0 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2576.
-Total: 3.953000 ms (FindLiveObjects: 0.384400 ms CreateObjectMapping: 0.189900 ms MarkObjects: 3.337200 ms  DeleteObjects: 0.040400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 295.807223 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
-  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '482a362b8fe5ce36b302051eaf90a735') in 0.386013 seconds
-  Import took 0.392703 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000354 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
-  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73bfc51c5222557aa47c55c3d1b82acd') in 0.122260 seconds
-  Import took 0.127849 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
-  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cec1587b7129bde4b287cc77833a66ca') in 0.064064 seconds
-  Import took 0.068755 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006926 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.681 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.1 MB.
-System memory in use after: 98.2 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2624.
-Total: 4.077600 ms (FindLiveObjects: 0.674000 ms CreateObjectMapping: 0.169900 ms MarkObjects: 3.204800 ms  DeleteObjects: 0.026900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004751 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.996 seconds
+- Completed reload, in  1.536 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.1 MB.
-System memory in use after: 98.2 MB.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.8 MB.
+System memory in use after: 94.9 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2628.
-Total: 3.178100 ms (FindLiveObjects: 0.234500 ms CreateObjectMapping: 0.100200 ms MarkObjects: 2.814300 ms  DeleteObjects: 0.027600 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2570.
+Total: 3.116200 ms (FindLiveObjects: 0.276900 ms CreateObjectMapping: 0.106100 ms MarkObjects: 2.704000 ms  DeleteObjects: 0.027300 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004684 seconds.
+Registered in 0.026060 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.43 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.692 seconds
+- Completed reload, in  1.957 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.1 MB.
-System memory in use after: 98.3 MB.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.8 MB.
+System memory in use after: 94.9 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2632.
-Total: 4.451900 ms (FindLiveObjects: 0.350600 ms CreateObjectMapping: 0.150700 ms MarkObjects: 3.922000 ms  DeleteObjects: 0.026700 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2574.
+Total: 5.278200 ms (FindLiveObjects: 0.398600 ms CreateObjectMapping: 0.205100 ms MarkObjects: 4.632400 ms  DeleteObjects: 0.039500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 559.138664 seconds.
+  path: Assets/Scripts/NeuronDragNodes.cs
+  artifactKey: Guid(3976f752fb365e74f8d3a6ae41519bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NeuronDragNodes.cs using Guid(3976f752fb365e74f8d3a6ae41519bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f6368d008294dfe6ddeaf6fb5e0add') in 0.013735 seconds
+  Import took 0.027438 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004527 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.640 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.1 MB.
-System memory in use after: 98.3 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2636.
-Total: 3.271200 ms (FindLiveObjects: 0.477100 ms CreateObjectMapping: 0.184300 ms MarkObjects: 2.584000 ms  DeleteObjects: 0.024300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004742 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.810 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.1 MB.
-System memory in use after: 98.3 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2640.
-Total: 4.346200 ms (FindLiveObjects: 0.491900 ms CreateObjectMapping: 0.222500 ms MarkObjects: 3.602800 ms  DeleteObjects: 0.026800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.025043 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.05 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  7.530 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.36 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.2 MB.
-System memory in use after: 98.3 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2644.
-Total: 14.962900 ms (FindLiveObjects: 1.978500 ms CreateObjectMapping: 0.334500 ms MarkObjects: 12.585600 ms  DeleteObjects: 0.055300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1380.952467 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/BackgroundTiles.prefab
-  artifactKey: Guid(de1790862efd4b24a95b732a9356aa7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/BackgroundTiles.prefab using Guid(de1790862efd4b24a95b732a9356aa7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13af0eed1ddaad491776d3b9a1eeaa6a') in 0.048656 seconds
-  Import took 0.054395 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000930 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/BackgroundTiles.prefab
-  artifactKey: Guid(de1790862efd4b24a95b732a9356aa7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/BackgroundTiles.prefab using Guid(de1790862efd4b24a95b732a9356aa7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13af0eed1ddaad491776d3b9a1eeaa6a') in 0.008054 seconds
-  Import took 0.013815 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.296884 seconds.
-  path: Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
-  artifactKey: Guid(f952c082cb03451daed3ee968ac6c63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset using Guid(f952c082cb03451daed3ee968ac6c63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe7d18d05c5cb4771e20e1f22d6e6f31') in 0.023038 seconds
-  Import took 0.028484 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.222222 seconds.
-  path: Assets/Prefabs/Control Elements/Drawer.prefab
-  artifactKey: Guid(f692ff3b78af3fd4c86f7984241cc485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Control Elements/Drawer.prefab using Guid(f692ff3b78af3fd4c86f7984241cc485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f36e9b700b6369d3fa8908c3b150b5c5') in 0.096582 seconds
-  Import took 0.101903 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.442937 seconds.
-  path: Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
-  artifactKey: Guid(c41005c129ba4d66911b75229fd70b45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset using Guid(c41005c129ba4d66911b75229fd70b45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae9630bc5d9b3a5dfb6959979e721fb4') in 0.020419 seconds
-  Import took 0.025321 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000312 seconds.
-  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
-  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15770c780ebad2127a7dba05b3837a4c') in 0.081694 seconds
-  Import took 0.086550 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.967397 seconds.
-  path: Assets/Prefabs/Items/Item.prefab
-  artifactKey: Guid(8efff1773d586334dae53afba6a1879b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Items/Item.prefab using Guid(8efff1773d586334dae53afba6a1879b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccfd4479b9e7994bed8cf92d8652ef9b') in 0.025884 seconds
-  Import took 0.034325 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.843391 seconds.
-  path: Assets/Prefabs/Items/ItemSlot.prefab
-  artifactKey: Guid(34d613a376d8f9b4288e7af854011ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Items/ItemSlot.prefab using Guid(34d613a376d8f9b4288e7af854011ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72a89bbb51d38af7a798c3b7a142588') in 0.044821 seconds
-  Import took 0.049807 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000472 seconds.
-  path: Assets/Prefabs/Control Elements/ItemSlot.prefab
-  artifactKey: Guid(68cb29c86fe51e54295ed4825214abae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Control Elements/ItemSlot.prefab using Guid(68cb29c86fe51e54295ed4825214abae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdf7cdea8f0523dbcebe072863bf5e59') in 0.021469 seconds
-  Import took 0.027497 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.310628 seconds.
-  path: Assets/Prefabs/Control Elements/Table.prefab
-  artifactKey: Guid(32ed62d18481788478281e303050acaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Control Elements/Table.prefab using Guid(32ed62d18481788478281e303050acaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c551418948ee7489d14837ebb088a1d') in 0.029889 seconds
-  Import took 0.035932 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004885 seconds.
-  path: Assets/Prefabs/Control Elements/Table.prefab
-  artifactKey: Guid(32ed62d18481788478281e303050acaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Control Elements/Table.prefab using Guid(32ed62d18481788478281e303050acaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c551418948ee7489d14837ebb088a1d') in 0.013695 seconds
-  Import took 0.018662 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026243 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_0.asset
-  artifactKey: Guid(e2e33abc279831e428571726121414f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_0.asset using Guid(e2e33abc279831e428571726121414f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a98dc2af621ba1cc1070f1f710c9a5d') in 0.049122 seconds
-  Import took 0.055844 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.222924 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_1.asset
-  artifactKey: Guid(b669f5120d32ddc4da5cf4c98a88d6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_1.asset using Guid(b669f5120d32ddc4da5cf4c98a88d6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe821f635703432f35b37be628786563') in 0.029511 seconds
-  Import took 0.034795 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_2.asset
-  artifactKey: Guid(6410075819dc8fb42851f03958aeda24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_2.asset using Guid(6410075819dc8fb42851f03958aeda24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcdf941bc827b8d3ec3841b492b20daf') in 0.017298 seconds
-  Import took 0.021921 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000341 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_1.asset
-  artifactKey: Guid(b669f5120d32ddc4da5cf4c98a88d6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_1.asset using Guid(b669f5120d32ddc4da5cf4c98a88d6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe821f635703432f35b37be628786563') in 0.009734 seconds
-  Import took 0.014633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000382 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_3.asset
-  artifactKey: Guid(2fddc480307040042a414fd1f94f3ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_3.asset using Guid(2fddc480307040042a414fd1f94f3ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38ebdcaf0aa1dbabd87d7a82b98862b9') in 0.025659 seconds
-  Import took 0.031247 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000396 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_2.asset
-  artifactKey: Guid(6410075819dc8fb42851f03958aeda24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_2.asset using Guid(6410075819dc8fb42851f03958aeda24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcdf941bc827b8d3ec3841b492b20daf') in 0.012523 seconds
-  Import took 0.019970 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_4.asset
-  artifactKey: Guid(d22cd37c5b0902540922ecd0b2c6bb0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_4.asset using Guid(d22cd37c5b0902540922ecd0b2c6bb0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ecb2d87614540f1b66a351b11e454d6') in 0.017420 seconds
-  Import took 0.023374 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_5.asset
-  artifactKey: Guid(9eb54f20eb8c9e44c99ce4b4d8a43711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_5.asset using Guid(9eb54f20eb8c9e44c99ce4b4d8a43711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93460f82f7e01345581c6edba857dd10') in 0.025353 seconds
-  Import took 0.033036 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.199488 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_6.asset
-  artifactKey: Guid(1be104b38fab31f4182e574be0d85f67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_6.asset using Guid(1be104b38fab31f4182e574be0d85f67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7a5b0b19c79e3a0dc8404f694aad2f4') in 0.017240 seconds
-  Import took 0.022184 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000502 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_7.asset
-  artifactKey: Guid(1ba155ddb94304f41a12dc52b9a899af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_7.asset using Guid(1ba155ddb94304f41a12dc52b9a899af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81b098bdc4350f48d8dcc2d889ec3de6') in 0.017626 seconds
-  Import took 0.024934 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.079118 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_8.asset
-  artifactKey: Guid(25cd2b7d4788ecb488d302bb22d3e8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_8.asset using Guid(25cd2b7d4788ecb488d302bb22d3e8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0725201e532933023959fa744020dfc') in 0.026421 seconds
-  Import took 0.032384 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000288 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_9.asset
-  artifactKey: Guid(250bc4ebff4e4b942bb7c443677c79dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_9.asset using Guid(250bc4ebff4e4b942bb7c443677c79dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b76febbb67d6bdb82535e2ca1820d7b9') in 0.019512 seconds
-  Import took 0.024426 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.722549 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_10.asset
-  artifactKey: Guid(66dda2cad6cd3ad4a92ef03e88b21681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_10.asset using Guid(66dda2cad6cd3ad4a92ef03e88b21681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba452deb0168a06415573acb371ed0ec') in 0.034708 seconds
-  Import took 0.043969 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000373 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_12.asset
-  artifactKey: Guid(820db7d115f4ee548b6f103261a60df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_12.asset using Guid(820db7d115f4ee548b6f103261a60df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29b5700a5552a9cfbe44d9b857911bb') in 0.024576 seconds
-  Import took 0.033473 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000337 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_10.asset
-  artifactKey: Guid(66dda2cad6cd3ad4a92ef03e88b21681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_10.asset using Guid(66dda2cad6cd3ad4a92ef03e88b21681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba452deb0168a06415573acb371ed0ec') in 0.016400 seconds
-  Import took 0.025115 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000389 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_11.asset
-  artifactKey: Guid(bed909ddf8856364d913308e065fa5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_11.asset using Guid(bed909ddf8856364d913308e065fa5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c35252a12c2d8c366a6d169a3d70517') in 0.042421 seconds
-  Import took 0.054003 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000430 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_13.asset
-  artifactKey: Guid(b5d24abd335173f49a17952d2ec46181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_13.asset using Guid(b5d24abd335173f49a17952d2ec46181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a957314b7e20ef6a68508cb4b7a9919d') in 0.028008 seconds
-  Import took 0.038955 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000318 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_15.asset
-  artifactKey: Guid(5a1c79ea410bf6046949efb01c19ce2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_15.asset using Guid(5a1c79ea410bf6046949efb01c19ce2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2189584ddd628f1480a76c26096fda8') in 0.025996 seconds
-  Import took 0.035152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000740 seconds.
-  path: Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_14.asset
-  artifactKey: Guid(c0eb9d6c8bc4684418c3ff65d13f2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tilesets/BackgroundTilePalette/TileMap_14.asset using Guid(c0eb9d6c8bc4684418c3ff65d13f2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f650da07242f74984d875e3383bc34') in 0.034996 seconds
-  Import took 0.045569 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.251205 seconds.
-  path: Assets/TextMesh Pro/Resources/TMP Settings.asset
-  artifactKey: Guid(3f5b5dff67a942289a9defa416b206f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/TMP Settings.asset using Guid(3f5b5dff67a942289a9defa416b206f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48c1b5b2a5c51f560115e3359f92e96c') in 0.091152 seconds
-  Import took 0.097891 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007900 seconds.
+Registered in 0.006822 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.797 seconds
+- Completed reload, in  1.297 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.3 MB.
-System memory in use after: 98.4 MB.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.8 MB.
+System memory in use after: 94.9 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2653.
-Total: 3.763900 ms (FindLiveObjects: 0.417500 ms CreateObjectMapping: 0.166200 ms MarkObjects: 3.151200 ms  DeleteObjects: 0.027500 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2578.
+Total: 2.773300 ms (FindLiveObjects: 0.472300 ms CreateObjectMapping: 0.073500 ms MarkObjects: 2.207900 ms  DeleteObjects: 0.018700 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.024947 seconds.
+Registered in 0.004720 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.363 seconds
+- Completed reload, in  1.529 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.8 MB.
+System memory in use after: 94.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2582.
+Total: 4.930900 ms (FindLiveObjects: 0.374200 ms CreateObjectMapping: 0.281600 ms MarkObjects: 4.231600 ms  DeleteObjects: 0.040800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 536.012950 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6508bbcd094bf5f75ece66869b7ca28f') in 0.316071 seconds
+  Import took 0.327338 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005013 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.548 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.9 MB.
+System memory in use after: 98.0 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2593.
+Total: 3.227700 ms (FindLiveObjects: 0.407600 ms CreateObjectMapping: 0.154400 ms MarkObjects: 2.624700 ms  DeleteObjects: 0.039300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006877 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.442 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.9 MB.
+System memory in use after: 98.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2597.
+Total: 4.412900 ms (FindLiveObjects: 0.255700 ms CreateObjectMapping: 0.154200 ms MarkObjects: 3.973100 ms  DeleteObjects: 0.028600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 472.235070 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81772aa0c13be9901fe6b5f5c302075f') in 0.189482 seconds
+  Import took 0.197562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.152353 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd4b6c09523b1d07cb7ea888e4425af') in 0.068850 seconds
+  Import took 0.078824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.981161 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e38077095c3dcee97fe8c3a068397460') in 0.056973 seconds
+  Import took 0.064815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.423007 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64554a2678c31c3d4a4c4a0ee239ccda') in 0.057920 seconds
+  Import took 0.064515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.813586 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ee241cc2b006d67e599c0bf9486ecc6') in 0.056354 seconds
+  Import took 0.062986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.200144 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfec952cc6b6bb6bbfccbb2931e98bee') in 0.075878 seconds
+  Import took 0.091325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.048961 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b58cd80199980180630595563cfe297') in 0.064023 seconds
+  Import took 0.074195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.109838 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55c3db1d93469fcdd4c415e47441ad5') in 0.065742 seconds
+  Import took 0.071956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.031313 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88ff74e9f8040069cbbe4859628ca85c') in 0.073787 seconds
+  Import took 0.081019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.165041 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd857a83beb038f61f2eb2b16f08dc20b') in 0.078038 seconds
+  Import took 0.087399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.114615 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b86ee92575087b18db6e3628cf738ce6') in 0.137739 seconds
+  Import took 0.155444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.630166 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5da3fe1400d49706352ae33706178245') in 0.073637 seconds
+  Import took 0.080619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.377025 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea3b06635d23bfdfc860368fb4b3bcd') in 0.088888 seconds
+  Import took 0.097686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.553487 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4724925e5b8780722e0c1a63da8fb3d2') in 0.095725 seconds
+  Import took 0.106718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.534491 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2e01588da0dffab14a2d8cc1b945630') in 0.060807 seconds
+  Import took 0.067706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.624374 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5abc7aebdab763aec14acde214d5b9dc') in 0.069204 seconds
+  Import took 0.079164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.173090 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0082a7311f75fc62d72826f31ca50ee2') in 0.065021 seconds
+  Import took 0.072427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.612785 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7adff71299333d6cd2804474e6712746') in 0.073249 seconds
+  Import took 0.083485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.411538 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5b09c0d940f17fb064ff4bb296526b') in 0.118613 seconds
+  Import took 0.132421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.765656 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf83a05c061490245790afd2759112e') in 0.063445 seconds
+  Import took 0.069627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.518603 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '147019a874962ef4c4a3fb97479f8045') in 0.063829 seconds
+  Import took 0.070727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.438228 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b7843df947fbf0b5b9704eb1490f0b') in 0.082143 seconds
+  Import took 0.096317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.456208 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15c8a471f504384b954a3127420dbe96') in 0.073207 seconds
+  Import took 0.080891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.213747 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c6e7acfd1a8f41a12d6d203325e437') in 0.075395 seconds
+  Import took 0.084822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.018030 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced4c519a080d43d501048cd07bc09c6') in 0.084321 seconds
+  Import took 0.097712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.425085 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e7d72a9cd1ea1d9c97cd9bfbd67ca6f') in 0.084100 seconds
+  Import took 0.095069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.714678 seconds.
+  path: Assets/Scripts/NeuronDragSignal.cs
+  artifactKey: Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NeuronDragSignal.cs using Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44bf998321c381baf0c1a3a9b555c6c7') in 0.003697 seconds
+  Import took 0.012729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001408 seconds.
+  path: Assets/Scripts/NeuronDragSignal.cs
+  artifactKey: Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NeuronDragSignal.cs using Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44bf998321c381baf0c1a3a9b555c6c7') in 0.005619 seconds
+  Import took 0.011650 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005506 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.904 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 98.3 MB.
 System memory in use after: 98.4 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2657.
-Total: 3.298700 ms (FindLiveObjects: 0.383900 ms CreateObjectMapping: 0.114900 ms MarkObjects: 2.770100 ms  DeleteObjects: 0.028500 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2602.
+Total: 4.849600 ms (FindLiveObjects: 0.347300 ms CreateObjectMapping: 0.180800 ms MarkObjects: 4.163800 ms  DeleteObjects: 0.155600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.226451 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.512 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2606.
+Total: 8.754100 ms (FindLiveObjects: 0.840800 ms CreateObjectMapping: 0.436200 ms MarkObjects: 7.387700 ms  DeleteObjects: 0.085300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 27070.569997 seconds.
+  path: Assets/Scripts/NeuronDragSignal.cs
+  artifactKey: Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NeuronDragSignal.cs using Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8946e6a5fde60bab9659852d9574954') in 0.017737 seconds
+  Import took 0.027992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026043 seconds.
+  path: Assets/Scripts/NeuronDragSignal.cs
+  artifactKey: Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NeuronDragSignal.cs using Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8946e6a5fde60bab9659852d9574954') in 0.005599 seconds
+  Import took 0.011256 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013711 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.481 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2610.
+Total: 7.809900 ms (FindLiveObjects: 2.559600 ms CreateObjectMapping: 0.422400 ms MarkObjects: 4.782400 ms  DeleteObjects: 0.033300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006971 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.277 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2614.
+Total: 4.876100 ms (FindLiveObjects: 0.365600 ms CreateObjectMapping: 0.150200 ms MarkObjects: 4.272500 ms  DeleteObjects: 0.085600 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
