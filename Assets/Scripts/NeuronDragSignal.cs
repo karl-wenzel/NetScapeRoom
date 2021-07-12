@@ -26,13 +26,17 @@ public class NeuronDragSignal : MonoBehaviour
     void Start()
     {
         output.text = "NeuronDrag Minispiel";
-        TargetPosition = transform.position;
+        TargetPosition = transform.localPosition;
     }
 
     // Update is called once per frame
+
+    float StartTime = 0f;
+    float LerpTimeTotal = 0.5f;
+
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, TargetPosition, Time.deltaTime * Speed);
+        transform.localPosition = Vector3.Lerp(transform.localPosition, TargetPosition, (Time.time - StartTime)/LerpTimeTotal);
     }
 
     public float getSpeed()
@@ -58,6 +62,7 @@ public class NeuronDragSignal : MonoBehaviour
 
     public void setTargetPosition(Vector3 target)
     {
+        StartTime = Time.time;
         TargetPosition = target;
     }
 

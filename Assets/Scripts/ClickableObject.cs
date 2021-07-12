@@ -21,7 +21,9 @@ public class ClickableObject : MonoBehaviour
                 SpawnPositionController.spawnPositionControllerInstance.GetPlayerSpawnPositionInWorldCoordinates(PlayerIndex, IsUIGame), 
                 Quaternion.identity);
             if (IsUIGame) {
-                NewMinigame.transform.parent = SpawnPositionController.spawnPositionControllerInstance.GetCanvas().transform;
+                NewMinigame.transform.SetParent(SpawnPositionController.spawnPositionControllerInstance.GetCanvas().transform);
+                float scaleFactor = (Screen.height + Screen.width) / 1200f;
+                NewMinigame.transform.localScale = new Vector3(scaleFactor, scaleFactor, 1f);
             }
             MinigameWindow NewMinigameWindow = NewMinigame.GetComponent<MinigameWindow>();
             for (int i = 0; i < PlayerIndex; i++)

@@ -15,11 +15,11 @@ C:/Users/Jakob Arnold/Desktop/Studium-nichtCloud/Semester/04/Psychologie und Did
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65060
+55481
 Successfully changed project path to: C:/Users/Jakob Arnold/Desktop/Studium-nichtCloud/Semester/04/Psychologie und Didaktik/prototyp/NetScapeRoom
 C:/Users/Jakob Arnold/Desktop/Studium-nichtCloud/Semester/04/Psychologie und Didaktik/prototyp/NetScapeRoom
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 71.20 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 59.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -35,51 +35,535 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56220
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005117 seconds.
+Registered in 0.002439 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 44.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 50.94 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.281 seconds
+- Completed reload, in  6.093 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.014113 seconds.
+Registered in 0.026252 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 44.03 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 46.96 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.363 seconds
+- Completed reload, in  1.406 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2120 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 96.5 MB.
 System memory in use after: 96.6 MB.
 
 Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2562.
-Total: 2.646700 ms (FindLiveObjects: 0.210200 ms CreateObjectMapping: 0.071900 ms MarkObjects: 2.249200 ms  DeleteObjects: 0.114300 ms)
+Total: 2.561100 ms (FindLiveObjects: 0.206800 ms CreateObjectMapping: 0.081600 ms MarkObjects: 2.190200 ms  DeleteObjects: 0.081100 ms)
 
 ========================================================================
 Received Import Request.
   path: Assets/Scripts/NeuronDragSignal.cs
   artifactKey: Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/NeuronDragSignal.cs using Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d266e9e48c22c7dcd4d61afe577547') in 0.044313 seconds
-  Import took 0.048829 seconds .
+Start importing Assets/Scripts/NeuronDragSignal.cs using Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdd81c93c9d830cb22b5aeae427131cf') in 0.043909 seconds
+  Import took 0.048682 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 382.831584 seconds.
+  Time since last request: 0.000446 seconds.
+  path: Assets/Scripts/NeuronDragNodes.cs
+  artifactKey: Guid(3976f752fb365e74f8d3a6ae41519bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NeuronDragNodes.cs using Guid(3976f752fb365e74f8d3a6ae41519bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eefb1a0c92f86ea46bf227b06594325c') in 0.018891 seconds
+  Import took 0.025685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.645526 seconds.
+  path: Assets/Scripts/Items/DraggableUINeuron.cs
+  artifactKey: Guid(be66cf519758a124eb5c62f069aa4df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Items/DraggableUINeuron.cs using Guid(be66cf519758a124eb5c62f069aa4df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66f2ad68bad79ac49fef6c3fcd880f41') in 0.014352 seconds
+  Import took 0.028615 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004793 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.552 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.7 MB.
+System memory in use after: 94.8 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2566.
+Total: 2.879500 ms (FindLiveObjects: 0.207900 ms CreateObjectMapping: 0.071400 ms MarkObjects: 2.549400 ms  DeleteObjects: 0.049800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004967 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.536 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.8 MB.
+System memory in use after: 94.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2570.
+Total: 3.116200 ms (FindLiveObjects: 0.276900 ms CreateObjectMapping: 0.106100 ms MarkObjects: 2.704000 ms  DeleteObjects: 0.027300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.026060 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.957 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.8 MB.
+System memory in use after: 94.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2574.
+Total: 5.278200 ms (FindLiveObjects: 0.398600 ms CreateObjectMapping: 0.205100 ms MarkObjects: 4.632400 ms  DeleteObjects: 0.039500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 559.138664 seconds.
+  path: Assets/Scripts/NeuronDragNodes.cs
+  artifactKey: Guid(3976f752fb365e74f8d3a6ae41519bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NeuronDragNodes.cs using Guid(3976f752fb365e74f8d3a6ae41519bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f6368d008294dfe6ddeaf6fb5e0add') in 0.013735 seconds
+  Import took 0.027438 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006822 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.297 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.8 MB.
+System memory in use after: 94.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2578.
+Total: 2.773300 ms (FindLiveObjects: 0.472300 ms CreateObjectMapping: 0.073500 ms MarkObjects: 2.207900 ms  DeleteObjects: 0.018700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004720 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.529 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.8 MB.
+System memory in use after: 94.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2582.
+Total: 4.930900 ms (FindLiveObjects: 0.374200 ms CreateObjectMapping: 0.281600 ms MarkObjects: 4.231600 ms  DeleteObjects: 0.040800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 536.012950 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6508bbcd094bf5f75ece66869b7ca28f') in 0.316071 seconds
+  Import took 0.327338 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005013 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.548 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.9 MB.
+System memory in use after: 98.0 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2593.
+Total: 3.227700 ms (FindLiveObjects: 0.407600 ms CreateObjectMapping: 0.154400 ms MarkObjects: 2.624700 ms  DeleteObjects: 0.039300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006877 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.442 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.9 MB.
+System memory in use after: 98.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2597.
+Total: 4.412900 ms (FindLiveObjects: 0.255700 ms CreateObjectMapping: 0.154200 ms MarkObjects: 3.973100 ms  DeleteObjects: 0.028600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 472.235070 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81772aa0c13be9901fe6b5f5c302075f') in 0.189482 seconds
+  Import took 0.197562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.152353 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd4b6c09523b1d07cb7ea888e4425af') in 0.068850 seconds
+  Import took 0.078824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.981161 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e38077095c3dcee97fe8c3a068397460') in 0.056973 seconds
+  Import took 0.064815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.423007 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64554a2678c31c3d4a4c4a0ee239ccda') in 0.057920 seconds
+  Import took 0.064515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.813586 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ee241cc2b006d67e599c0bf9486ecc6') in 0.056354 seconds
+  Import took 0.062986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.200144 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfec952cc6b6bb6bbfccbb2931e98bee') in 0.075878 seconds
+  Import took 0.091325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.048961 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b58cd80199980180630595563cfe297') in 0.064023 seconds
+  Import took 0.074195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.109838 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55c3db1d93469fcdd4c415e47441ad5') in 0.065742 seconds
+  Import took 0.071956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.031313 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88ff74e9f8040069cbbe4859628ca85c') in 0.073787 seconds
+  Import took 0.081019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.165041 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd857a83beb038f61f2eb2b16f08dc20b') in 0.078038 seconds
+  Import took 0.087399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.114615 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b86ee92575087b18db6e3628cf738ce6') in 0.137739 seconds
+  Import took 0.155444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.630166 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5da3fe1400d49706352ae33706178245') in 0.073637 seconds
+  Import took 0.080619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.377025 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea3b06635d23bfdfc860368fb4b3bcd') in 0.088888 seconds
+  Import took 0.097686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.553487 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4724925e5b8780722e0c1a63da8fb3d2') in 0.095725 seconds
+  Import took 0.106718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.534491 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2e01588da0dffab14a2d8cc1b945630') in 0.060807 seconds
+  Import took 0.067706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.624374 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5abc7aebdab763aec14acde214d5b9dc') in 0.069204 seconds
+  Import took 0.079164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.173090 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0082a7311f75fc62d72826f31ca50ee2') in 0.065021 seconds
+  Import took 0.072427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.612785 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7adff71299333d6cd2804474e6712746') in 0.073249 seconds
+  Import took 0.083485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.411538 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5b09c0d940f17fb064ff4bb296526b') in 0.118613 seconds
+  Import took 0.132421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.765656 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf83a05c061490245790afd2759112e') in 0.063445 seconds
+  Import took 0.069627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.518603 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '147019a874962ef4c4a3fb97479f8045') in 0.063829 seconds
+  Import took 0.070727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.438228 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b7843df947fbf0b5b9704eb1490f0b') in 0.082143 seconds
+  Import took 0.096317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.456208 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15c8a471f504384b954a3127420dbe96') in 0.073207 seconds
+  Import took 0.080891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.213747 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c6e7acfd1a8f41a12d6d203325e437') in 0.075395 seconds
+  Import took 0.084822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.018030 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced4c519a080d43d501048cd07bc09c6') in 0.084321 seconds
+  Import took 0.097712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.425085 seconds.
+  path: Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab
+  artifactKey: Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MiniGames/NeuronDragMinigame.prefab using Guid(1a7ee774788195a4fb4409045361c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e7d72a9cd1ea1d9c97cd9bfbd67ca6f') in 0.084100 seconds
+  Import took 0.095069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.714678 seconds.
   path: Assets/Scripts/NeuronDragSignal.cs
   artifactKey: Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/NeuronDragSignal.cs using Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fae180535dee9e2dd93404a94110742') in 0.004743 seconds
-  Import took 0.014830 seconds .
+Start importing Assets/Scripts/NeuronDragSignal.cs using Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44bf998321c381baf0c1a3a9b555c6c7') in 0.003697 seconds
+  Import took 0.012729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001408 seconds.
+  path: Assets/Scripts/NeuronDragSignal.cs
+  artifactKey: Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NeuronDragSignal.cs using Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44bf998321c381baf0c1a3a9b555c6c7') in 0.005619 seconds
+  Import took 0.011650 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005506 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.904 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.4 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2602.
+Total: 4.849600 ms (FindLiveObjects: 0.347300 ms CreateObjectMapping: 0.180800 ms MarkObjects: 4.163800 ms  DeleteObjects: 0.155600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.226451 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.512 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2606.
+Total: 8.754100 ms (FindLiveObjects: 0.840800 ms CreateObjectMapping: 0.436200 ms MarkObjects: 7.387700 ms  DeleteObjects: 0.085300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 27070.569997 seconds.
+  path: Assets/Scripts/NeuronDragSignal.cs
+  artifactKey: Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NeuronDragSignal.cs using Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8946e6a5fde60bab9659852d9574954') in 0.017737 seconds
+  Import took 0.027992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026043 seconds.
+  path: Assets/Scripts/NeuronDragSignal.cs
+  artifactKey: Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NeuronDragSignal.cs using Guid(111f1ba7f02941a4b92deaca022b53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8946e6a5fde60bab9659852d9574954') in 0.005599 seconds
+  Import took 0.011256 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013711 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.481 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2610.
+Total: 7.809900 ms (FindLiveObjects: 2.559600 ms CreateObjectMapping: 0.422400 ms MarkObjects: 4.782400 ms  DeleteObjects: 0.033300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006971 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.277 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2614.
+Total: 4.876100 ms (FindLiveObjects: 0.365600 ms CreateObjectMapping: 0.150200 ms MarkObjects: 4.272500 ms  DeleteObjects: 0.085600 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
