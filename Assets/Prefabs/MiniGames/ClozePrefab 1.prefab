@@ -669,7 +669,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000005722046, y: 0.000002861023}
+  m_AnchoredPosition: {x: -0.0000076293945, y: 0.000002861023}
   m_SizeDelta: {x: -4.9519, y: -17.634}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8670451690058021845
@@ -3287,8 +3287,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.5, y: -0.5}
-  m_SizeDelta: {x: -25, y: -3}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4797294299856757170
 CanvasRenderer:
@@ -4023,10 +4023,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "K\xFCnstliche Neuronale Netze sind dem menschlichen \t\t              
-    nachempfunden.\nSie sind die \t\t\t        f\xFCr k\xFCnstliche Intelligenz und
-    maschinelles \t\t\t\t     .\nDurch K\xFCnstliche Neuronale Netze lassen sich
-    verschiedene\t\t         interpretieren und damit \t\t       Aufgaben mit dem
-    Computer l\xF6sen. "
+    nachempfunden.\nSie sind die \t\t \t         f\xFCr k\xFCnstliche Intelligenz
+    und maschinelles \t\t\t\t     .\nDurch K\xFCnstliche Neuronale Netze lassen sich
+    verschiedene Datentypen                    \t und damit \t\t       Aufgaben mit
+    dem Computer l\xF6sen. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4133,8 +4133,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17, y: -13.8}
-  m_SizeDelta: {x: 61.3151, y: 12.3099}
+  m_AnchoredPosition: {x: 28.278595, y: -13.8}
+  m_SizeDelta: {x: 68.2724, y: 12.3099}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3920206305219538419
 CanvasRenderer:
@@ -4226,11 +4226,11 @@ MonoBehaviour:
     m_Options:
     - m_Text: ...
       m_Image: {fileID: 0}
-    - m_Text: Datentypen
+    - m_Text: interpretieren
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: generieren
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: regenerieren
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4282,8 +4282,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -28.222, y: -40.3}
-  m_SizeDelta: {x: 132.8497, y: 9.3677}
+  m_AnchoredPosition: {x: -24.91, y: -41.5937}
+  m_SizeDelta: {x: 143.23, y: 15.4793}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3259884564693836049
 CanvasRenderer:
@@ -4322,8 +4322,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190260
-  m_fontColor: {r: 0.7075472, g: 0, b: 0, a: 1}
+    rgba: 4278255601
+  m_fontColor: {r: 0.9463476, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4340,8 +4340,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 7
+  m_fontSizeBase: 7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6344,7 +6344,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000005722046, y: 0.000002861023}
+  m_AnchoredPosition: {x: -0.0000076293945, y: 0.000002861023}
   m_SizeDelta: {x: -4.9519, y: -17.634}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8979597133180202109
@@ -7522,8 +7522,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.6464, y: 21.1}
-  m_SizeDelta: {x: 62.0243, y: 12.3099}
+  m_AnchoredPosition: {x: -21.0183, y: 21.1}
+  m_SizeDelta: {x: 67.9877, y: 12.3099}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5529294369204240677
 CanvasRenderer:
@@ -7617,9 +7617,9 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Grundlage
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: Erweiterungen
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: Grenzen
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
