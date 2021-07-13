@@ -1,5 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Draggable : MonoBehaviour
@@ -25,8 +30,9 @@ public class Draggable : MonoBehaviour
     private bool IsDragging = false;
     private bool IsColliding = false;
     private bool IsSelectingItemSlot;
+    private bool HasItemSlot;
 
-    private Collider2D SelectedItemSlot;
+    private ItemSlotManager SelectedItemSlot;
 
     private Vector3 OriginalScale;
     private Vector3 CurrentScale;
@@ -55,9 +61,9 @@ public class Draggable : MonoBehaviour
     public void Click()
     {
 
-            GameObject newInspector = Instantiate(inspector, new Vector3(0, 0, 0), Quaternion.identity);
-            newInspector.GetComponent<HoldsText>().SetDescription(Description);
-            newInspector.transform.SetParent(GameObject.Find("Canvas").transform, false);
+        GameObject newInspector = Instantiate(inspector, new Vector3(0, 0, 0), Quaternion.identity);
+        newInspector.GetComponent<HoldsText>().SetDescription(Description);
+        newInspector.transform.SetParent(GameObject.Find("Canvas").transform, false);
 
     }
 
@@ -85,27 +91,74 @@ public class Draggable : MonoBehaviour
     {
         CurrentScale = OriginalScale;
 
+        
+
+        this.GetComponent<BoxCollider2D>().enabled = false;
+
+        int layerMask = LayerMask.GetMask("ControllElement");
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.localPosition, Vector3.forward, layerMask);
+
+        this.GetComponent<BoxCollider2D>().enabled = true;
+
+        if (hit.collider != null)
+        {
+
+            if (hit.collider.CompareTag("ItemSlot"))
+            {
+                ItemSlotManager LastItemSlot = SelectedItemSlot;
+
+                Debug.Log("Found Itemslot");
+
+                SelectedItemSlot = hit.collider.GetComponent<ItemSlotManager>();
+
+                if (SelectedItemSlot.AcceptsNewItem(this))
+                {
+                    Debug.Log("Itemslot accepts item");
+                    SelectedItemSlot.AddItem(this);
+                    TargetPosition = SelectedItemSlot.transform.position;
+                }
+                else if (SelectedItemSlot.ContainsItem(this))
+                {
+                    Debug.Log("Item remains in the same Itemslot");
+                    TargetPosition = SelectedItemSlot.transform.position;
+                }
+                else if(LastItemSlot != null && LastItemSlot.AcceptsNewItem(this))
+                {
+                    Debug.Log("Item send back to previous Itemslot");
+                    if(LastItemSlot != null) SelectedItemSlot = LastItemSlot;
+                    TargetPosition = SelectedItemSlot.transform.position;
+
+                }
+                else
+                {
+                    Debug.Log("Item send back to Last Position");
+                    TargetPosition = LastPosition;
+                }
+            }
+        }
+        else if(SelectedItemSlot != null) 
+        { 
+            SelectedItemSlot.RemoveItem();
+            SelectedItemSlot = null;
+        }
+
+
+
+
         if (!IsDragging) Click();
 
         IsDragging = false;
 
-        if (IsSelectingItemSlot)
-        {
-            ItemSlotManager ItemSlot = SelectedItemSlot.GetComponent<ItemSlotManager>();
-            if (ItemSlot.AcceptsNewItem(this))
-            {
-                ItemSlot.AddItem(this);
-                TargetPosition = SelectedItemSlot.transform.position;
-                IsColliding = false;
-            }
-            else
-            {
-                IsColliding = true;
-            }
-        }
 
         if (IsColliding) TargetPosition = LastPosition;
         LastPosition = transform.position;
+
+    }
+
+    public void SetItemSlot(ItemSlotManager Slot)
+    {
+        SelectedItemSlot = Slot;
     }
 
 
@@ -115,28 +168,5 @@ public class Draggable : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        IsColliding = true;
-
-        if (collision.CompareTag("ItemSlot"))
-        {
-            IsSelectingItemSlot = true;
-            SelectedItemSlot = collision;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        IsColliding = false;
-
-        if (collision.CompareTag("ItemSlot"))
-        {
-            ItemSlotManager ItemSlot = SelectedItemSlot.GetComponent<ItemSlotManager>();
-            ItemSlot.RemoveItem();
-            IsSelectingItemSlot = false;
-            SelectedItemSlot = null;
-        }
-    }
 
 }
