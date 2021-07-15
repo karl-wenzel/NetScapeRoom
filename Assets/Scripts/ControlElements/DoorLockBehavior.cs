@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class DoorLockBehavior : MonoBehaviour
 {
-    public GameObject DoorReference;
 
     public Draggable Accepts;
 
+    public ItemSlotManager ItemSlot;
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    private bool Unlocked = false;
+
+
+    public bool IsUnlocked()
     {
-        GameObject collider = collision.gameObject;
-        if (Accepts == collider.GetComponent<Draggable>())
-        {
-            DoorReference.GetComponent<DoorBehavior>().OpenDoor();
-            Destroy(collider);
-        }
+        return !ItemSlot.CheckIfEmpty();
     }
 }

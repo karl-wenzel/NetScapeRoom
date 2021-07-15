@@ -13,9 +13,9 @@ TagManager:
   - Water
   - UI
   - Background
+  - HiddenItems
   - ControlElements
   - Items
-  - 
   - 
   - 
   - 
@@ -47,6 +47,9 @@ TagManager:
     locked: 0
   - name: ControlElements
     uniqueID: 3313224473
+    locked: 0
+  - name: Glow
+    uniqueID: 1782451329
     locked: 0
   - name: Items
     uniqueID: 167626915

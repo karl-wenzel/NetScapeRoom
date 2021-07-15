@@ -10,6 +10,7 @@ public class ItemSlotManager : MonoBehaviour
     public Draggable DefaultItem;
 
     [Header("Coloring")]
+    public bool CanChangeColor = true;
     public Color ColorIsEmpty;
     public Color ColorIsFull;
     public Color ColorIsLocked;
@@ -28,7 +29,7 @@ public class ItemSlotManager : MonoBehaviour
     public void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        CurrentColor = ColorIsEmpty;
+        if (CanChangeColor) CurrentColor = ColorIsEmpty;
 
         if (DefaultItem != null)
         {
@@ -39,7 +40,9 @@ public class ItemSlotManager : MonoBehaviour
 
     public void Update()
     {
-        spriteRenderer.color = Color.Lerp(spriteRenderer.color, CurrentColor, Time.deltaTime * 10);
+        if (CanChangeColor) spriteRenderer.color = Color.Lerp(spriteRenderer.color, CurrentColor, Time.deltaTime * 10);
+
+        if (ContainedItem != null) IsEmpty = false;
     }
 
 
@@ -61,7 +64,7 @@ public class ItemSlotManager : MonoBehaviour
         return false;
     }
 
-    public bool ContainsItem(GameObject Item)
+    public bool ContainsItem(Draggable Item)
     {
         foreach (Draggable Accept in Accepts)
         {
@@ -71,17 +74,23 @@ public class ItemSlotManager : MonoBehaviour
         return false;
     }
 
+    public bool CompareItem(Draggable item)
+    {
+        return item == ContainedItem;
+    }
+
 
     public void AddItem(Draggable Item)
     {
         ContainedItem = Item;
+        ContainedItem.SetItemSlot(this);
         IsEmpty = false;
 
         if (IsLocked)
             LockItem();
         else
             UnlockItem();
-            CurrentColor = ColorIsFull;
+            if (CanChangeColor) CurrentColor = ColorIsFull;
     }
 
     public void RemoveItem()
@@ -89,23 +98,32 @@ public class ItemSlotManager : MonoBehaviour
         ContainedItem = null;
         IsEmpty = true;
 
-        CurrentColor = ColorIsEmpty;
+        if (CanChangeColor) CurrentColor = ColorIsEmpty;
     }
 
     public void LockItem()
     {
         IsLocked = true;
-        CurrentColor = ColorIsLocked;
         ContainedItem.GetComponent<Draggable>().SetEnableDrag(false);
+
+        if(CanChangeColor) CurrentColor = ColorIsLocked;
     }
 
     public void UnlockItem()
     {
         IsLocked = false;
 
-        if (IsEmpty) CurrentColor = ColorIsEmpty;
-        else CurrentColor = ColorIsUnlocked;
+        if (CanChangeColor)
+        {
+            if (IsEmpty) CurrentColor = ColorIsEmpty;
+            else CurrentColor = ColorIsUnlocked;
+        }
 
         ContainedItem.GetComponent<Draggable>().SetEnableDrag(true);
+    }
+
+    public bool CheckIfEmpty()
+    {
+        return IsEmpty;
     }
 }
