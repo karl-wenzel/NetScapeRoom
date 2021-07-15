@@ -21,8 +21,15 @@ public class NeuronDragNodes : MonoBehaviour
 
     public void onClickDo()
     {
-        nds.setLayer(Layer, rightPathNode);
-        nds.setTargetPosition(transform.localPosition);
+
+        if(nds.setLayer(Layer, rightPathNode))
+        {
+            nds.setTargetPosition(transform.localPosition);
+        }
+
+        nds.checkRightPath();
+
+
     }
     
 }

@@ -5,11 +5,17 @@ using TMPro;
 
 public class NeuronDragSignal : MonoBehaviour
 {
-    //true if the signal has pass the layer on the right neuron, otherwise false
-    private bool layer1 = false;
-    private bool layer2 = false;
-    private bool layer3 = false;
-    private bool layer4 = false;
+    //true if the signal has pass the layer ON THE RIGHT NEURON, otherwise false
+    private bool layer1;
+    private bool layer2;
+    private bool layer3;
+    private bool layer4;
+
+    //true if the signal has pass the layer
+    private bool isSetLayer1;
+    private bool isSetLayer2;
+    private bool isSetLayer3;
+    private bool isSetLayer4;
 
     public float Speed = 1;
 
@@ -17,17 +23,34 @@ public class NeuronDragSignal : MonoBehaviour
 
     public TextMeshProUGUI output;
 
-    private int currentLayer = 0;
-    private int currentNode = 0;
+    private int currentLayer;
+    private int currentNode;
 
-    public Vector3 TargetPosition;
+    private Vector3 TargetPosition;
+
+    private GameObject signalStartPosition;
 
     // Start is called before the first frame update
     void Start()
     {
-        output.text = "NeuronDrag Minispiel";
-        TargetPosition = transform.localPosition;
-    }
+        signalStartPosition = GameObject.Find("SignalStartPosition");
+        // output.text = "NeuronDrag Minispiel";
+        TargetPosition = signalStartPosition.transform.localPosition;
+
+        layer1 = false;
+        layer2 = false;
+        layer3 = false;
+        layer4 = false;
+
+        isSetLayer1 = false;
+        isSetLayer2 = false;
+        isSetLayer3 = false;
+        isSetLayer4 = false;
+
+        currentLayer = 0;
+        currentNode = 0;
+
+}
 
     // Update is called once per frame
 
@@ -49,7 +72,7 @@ public class NeuronDragSignal : MonoBehaviour
     }
     public void setCurrentLayer(int layer)
     {
-        currentLayer = layer; ;
+        currentLayer = layer; 
     }
     public int getCurrentNode()
     {
@@ -67,30 +90,94 @@ public class NeuronDragSignal : MonoBehaviour
     }
 
 
-    public void setLayer(int layer, bool value)
+    public bool setLayer(int layer, bool value)
     {
+        bool moveSignal = false;
+        output.text = "";
+
         switch (layer)
         {
             case 1:
-                layer1 = value;
+                if (currentLayer == 0 || currentLayer == 2)
+                {
+                    layer1 = value;
+                    isSetLayer1 = true;
+                    setCurrentLayer(1);
+                    Debug.Log("Layer " + layer + " gesetzt: " + value);
+                    moveSignal = true;
+                }
+                else
+                {
+                    output.text = "Ebenen können nicht übersprungen werden";
+                }
                 break;
             case 2:
-                layer2 = value;
+                if (currentLayer == 1 || currentLayer == 3)
+                {
+                    layer2 = value;
+                    isSetLayer2 = true;
+                    setCurrentLayer(2);
+                    Debug.Log("Layer " + layer + " gesetzt: " + value);
+                    moveSignal = true;
+                }
+                else
+                {
+                    output.text = "Ebenen können nicht übersprungen werden";
+                }
                 break;
             case 3:
-                layer3 = value;
+                if (currentLayer == 2 || currentLayer == 4)
+                {
+                    layer3 = value;
+                    isSetLayer3 = true;
+                    setCurrentLayer(3);
+                    Debug.Log("Layer " + layer + " gesetzt: " + value);
+                    moveSignal = true;
+                }
+                else
+                {
+                    output.text = "Ebenen können nicht übersprungen werden";
+                }
                 break;
             case 4:
-                layer4 = value;
+                if (currentLayer == 3)
+                {
+                    layer4 = value;
+                    isSetLayer4 = true;
+                    setCurrentLayer(4);
+                    Debug.Log("Layer " + layer + " gesetzt: " + value);
+                    moveSignal = true;
+                }
+                else
+                {
+                    output.text = "Ebenen können nicht übersprungen werden";
+                }
                 break;
         }
-        Debug.Log("Layer "+ layer +" gesetzt: " + value);
-
-
-        if (layer1 && layer2 && layer3 && layer4)
-        {
-          // Debug.Log("RICHTIGEN PFAD GENOMMEN");
-            controller.SuccessfulMinigame();
-        }
+        
+        return moveSignal;
     }
+
+    public void checkRightPath()
+    {
+        if (isSetLayer1 && isSetLayer2 && isSetLayer3 && isSetLayer4)
+        {
+            if (layer1 && layer2 && layer3 && layer4)
+            {
+                // Richtiger Pfad wurde genommen
+                output.text = "Super! Ihr habt den richtigen Pfad gefunden.";
+                
+                controller.SuccessfulMinigame();
+            }
+            else
+            {
+                output.text = "Falscher Pfad, bitte erneut versuchen!";
+                Start();
+            }
+        }
+       
+    }
+
+
+
 }
