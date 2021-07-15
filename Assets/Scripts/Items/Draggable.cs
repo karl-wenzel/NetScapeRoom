@@ -66,11 +66,12 @@ public class Draggable : MonoBehaviour
 
     public void Click()
     {
-
-        GameObject newInspector = Instantiate(inspector, new Vector3(0, 0, 0), Quaternion.identity);
-        newInspector.GetComponent<HoldsText>().SetDescription(Description);
-        newInspector.transform.SetParent(GameObject.Find("Canvas").transform, false);
-
+        if (inspector != null)
+        {
+            GameObject newInspector = Instantiate(inspector, new Vector3(0, 0, 0), Quaternion.identity);
+            newInspector.GetComponent<HoldsText>().SetDescription(Description);
+            newInspector.transform.SetParent(SpawnPositionController.spawnPositionControllerInstance.GetCanvas().transform, false);
+        }
     }
 
     public void BeginDrag()
