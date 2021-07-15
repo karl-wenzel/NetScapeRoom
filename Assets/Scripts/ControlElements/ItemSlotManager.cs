@@ -18,6 +18,8 @@ public class ItemSlotManager : MonoBehaviour
 
     public Draggable ContainedItem;
 
+    public Transform ItemPosition;
+
 
     private bool IsEmpty = true;
 
@@ -82,8 +84,12 @@ public class ItemSlotManager : MonoBehaviour
 
     public void AddItem(Draggable Item)
     {
+
         ContainedItem = Item;
         ContainedItem.SetItemSlot(this);
+        ContainedItem.SetLayer("ControlElements", 1);
+        ContainedItem.SetPosition(ItemPosition.position);
+        ContainedItem.SetCurrentScale(ItemPosition.localScale);
         IsEmpty = false;
 
         if (IsLocked)
@@ -95,6 +101,7 @@ public class ItemSlotManager : MonoBehaviour
 
     public void RemoveItem()
     {
+        //ContainedItem.SetLayer("Items", 0);
         ContainedItem = null;
         IsEmpty = true;
 
@@ -119,11 +126,22 @@ public class ItemSlotManager : MonoBehaviour
             else CurrentColor = ColorIsUnlocked;
         }
 
+        ContainedItem.SetLayer("Items", 1);
         ContainedItem.GetComponent<Draggable>().SetEnableDrag(true);
     }
 
     public bool CheckIfEmpty()
     {
         return IsEmpty;
+    }
+
+    public Vector3 GetItemPosition()
+    {
+        return ItemPosition.position;
+    }
+
+    public Vector3 GetItemScale()
+    {
+        return ItemPosition.localScale;
     }
 }

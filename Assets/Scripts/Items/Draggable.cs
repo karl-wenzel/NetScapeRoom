@@ -37,6 +37,8 @@ public class Draggable : MonoBehaviour
     private Vector3 OriginalScale;
     private Vector3 CurrentScale;
 
+    private ItemAudio audio;
+
 
     public void Start()
     {
@@ -44,6 +46,8 @@ public class Draggable : MonoBehaviour
 
         OriginalScale = transform.localScale;
         CurrentScale = OriginalScale;
+
+        audio = GetComponent<ItemAudio>();
     }
 
     public void Update()
@@ -57,6 +61,8 @@ public class Draggable : MonoBehaviour
         transform.position = pos;
         TargetPosition = pos;
     }
+
+
 
     public void Click()
     {
@@ -74,6 +80,8 @@ public class Draggable : MonoBehaviour
         LastPosition = transform.position;
 
         CurrentScale = OriginalScale * DragScaleMultiplier;
+
+        audio.PlayPickUp();
     }
 
     public void Drag()
@@ -116,18 +124,20 @@ public class Draggable : MonoBehaviour
                 {
                     Debug.Log("Itemslot accepts item");
                     SelectedItemSlot.AddItem(this);
-                    TargetPosition = SelectedItemSlot.transform.position;
+
                 }
                 else if (SelectedItemSlot.ContainsItem(this))
                 {
                     Debug.Log("Item remains in the same Itemslot");
-                    TargetPosition = SelectedItemSlot.transform.position;
+                    TargetPosition = SelectedItemSlot.GetItemPosition();
+                    CurrentScale = SelectedItemSlot.GetItemScale();
                 }
                 else if(LastItemSlot != null && LastItemSlot.AcceptsNewItem(this))
                 {
                     Debug.Log("Item send back to previous Itemslot");
                     if(LastItemSlot != null) SelectedItemSlot = LastItemSlot;
-                    TargetPosition = SelectedItemSlot.transform.position;
+                    TargetPosition = SelectedItemSlot.GetItemPosition();
+                    CurrentScale = SelectedItemSlot.GetItemScale();
 
                 }
                 else
@@ -154,6 +164,9 @@ public class Draggable : MonoBehaviour
         if (IsColliding) TargetPosition = LastPosition;
         LastPosition = transform.position;
 
+
+        if (SelectedItemSlot == null) audio.PlayDrop();
+        else audio.PlayInsert();
     }
 
     public void SetItemSlot(ItemSlotManager Slot)
@@ -161,10 +174,22 @@ public class Draggable : MonoBehaviour
         SelectedItemSlot = Slot;
     }
 
+    public void SetLayer(String layer, int order)
+    {
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sortingLayerName = layer;
+        spriteRenderer.sortingOrder = order;
+    }
+
 
     public void SetEnableDrag(bool drag)
     {
         EnableDrag = drag;
+    }
+
+    public void SetCurrentScale(Vector3 scale)
+    {
+        CurrentScale = scale;
     }
 
 

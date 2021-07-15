@@ -10,7 +10,13 @@ public class PowerBoxBehavior : MonoBehaviour
 
     private bool IsOn = false;
 
+    public AudioClip FailedLever;
+    private AudioSource audio;
 
+    public void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
 
     public void Update()
     {
@@ -21,11 +27,12 @@ public class PowerBoxBehavior : MonoBehaviour
             light.TurnOn();
             IsOn = true;
         }
-        else
+        else if(Lever.Check())
         {
             IsOn = false;
             Lever.TurnOff();
             light.TurnOff();
+            PlayFail();
         }
 
     }
@@ -33,6 +40,11 @@ public class PowerBoxBehavior : MonoBehaviour
     public bool HasPower()
     {
         return IsOn;
+    }
+
+   private void PlayFail()
+    {
+        audio.PlayOneShot(FailedLever);
     }
 
 

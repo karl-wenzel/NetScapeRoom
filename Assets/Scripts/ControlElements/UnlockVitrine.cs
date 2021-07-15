@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class UnlockVitrine : MonoBehaviour
 {
-    public ItemSlotManager ItemSlot;
+    public VitrineController Vitrine;
 
     public void SuccessfulMinigame()
     {
-        ItemSlot.UnlockItem();
+        Vitrine.Unlock();
     }
 }

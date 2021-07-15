@@ -18,8 +18,12 @@ public class DeskLampController : MonoBehaviour
     private bool IsOn;
     private Color TargetColor;
 
+    private LeverAudio audio;
+
     public void Start()
     {
+        audio = GetComponent<LeverAudio>();
+
         IsOn = InitialState;
         UpdateSprite();
     }
@@ -43,10 +47,18 @@ public class DeskLampController : MonoBehaviour
         }
     }
 
+    public void PlayClickSound()
+    {
+        if (IsOn) audio.PlayClickOn();
+        else audio.PlayClickOff();
+
+    }
+
     public void TurnOn()
     {
         IsOn = true;
         UpdateSprite();
+        PlayClickSound();
     }
 
     public void TurnOff()
@@ -59,6 +71,7 @@ public class DeskLampController : MonoBehaviour
     {
         IsOn = !IsOn;
         UpdateSprite();
+        PlayClickSound();
     }
 
     public bool CheckIfOn()

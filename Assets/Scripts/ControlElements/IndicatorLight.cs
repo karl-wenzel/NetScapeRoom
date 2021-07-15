@@ -8,6 +8,9 @@ public class IndicatorLight : MonoBehaviour
     public Color ColorOff;
     public Color ColorOn;
 
+    public Sprite SpriteOff;
+    public Sprite SpriteOn;
+
     public Light2D light;
 
     public bool On = false;
@@ -26,13 +29,15 @@ public class IndicatorLight : MonoBehaviour
     {
         if (On)
         {
-            spriteRenderer.color = ColorOn;
+            spriteRenderer.sprite = SpriteOn;
             light.color = ColorOn;
+            light.intensity = 20;
         }
         else
         {
-            spriteRenderer.color = ColorOff;
+            spriteRenderer.sprite = SpriteOff;
             light.color = ColorOff;
+            light.intensity = 1;
         }
     }
 

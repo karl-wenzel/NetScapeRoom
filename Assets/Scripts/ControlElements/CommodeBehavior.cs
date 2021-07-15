@@ -5,25 +5,29 @@ using UnityEngine;
 public class CommodeBehavior : MonoBehaviour
 {
 
-    public Vector3 PositionOpen;
-    public float SlideTime;
+    public Transform ItemPositionOpen;
+    public Transform ItemPositionClosed;
 
-    public GameObject Slide;
     public GameObject ContainedItem;
+
+    public LeverAudio audio;
+
 
     private Vector3 TargetPosition;
     private bool IsOpen = false;
 
+    private ToogleSprites sprite;
+
 
     public void Start()
     {
-        Slide.transform.localPosition = Vector3.zero;
-        ContainedItem.transform.position = Slide.transform.position;
 
         ContainedItem.GetComponent<Draggable>().enabled = false;
         ContainedItem.GetComponent<BoxCollider2D>().enabled = false;
         ContainedItem.GetComponent<SpriteRenderer>().sortingLayerName = "ControlElements";
         ContainedItem.GetComponent<SpriteRenderer>().sortingOrder = 1;
+
+        sprite = GetComponent<ToogleSprites>();
     }
 
     public void Update()
@@ -41,21 +45,40 @@ public class CommodeBehavior : MonoBehaviour
 
     public void Open()
     {
-        Slide.transform.localPosition = PositionOpen;
+        if (ContainedItem != null)
+        {
+            Draggable draggable = ContainedItem.GetComponent<Draggable>();
+            draggable.enabled = true;
+            draggable.SetPosition(ItemPositionOpen.position);
 
-        Draggable draggable = ContainedItem.GetComponent<Draggable>();
-        draggable.enabled = true;
-        draggable.SetPosition(Slide.transform.position);
+            ContainedItem.GetComponent<BoxCollider2D>().enabled = true;
+            ContainedItem.GetComponent<SpriteRenderer>().sortingLayerName = "Items";
+        }
 
-        ContainedItem.GetComponent<BoxCollider2D>().enabled = true;
-        ContainedItem.GetComponent<SpriteRenderer>().sortingLayerName = "Items";
-        ContainedItem = null;
+        sprite.SetOn();
+
+        audio.PlayClickOn();
     }
 
     public void Close()
     {
-        Slide.transform.localPosition = Vector3.zero;
-        ContainedItem.transform.position = Slide.transform.position;
+        if (ContainedItem != null)
+        {
+            if (ContainedItem.transform.position != ItemPositionOpen.position)
+            {
+                ContainedItem = null;
+            }
+            else
+            {
+                ContainedItem.GetComponent<BoxCollider2D>().enabled = false;
+                ContainedItem.GetComponent<SpriteRenderer>().sortingLayerName = "ControlElements";
+                ContainedItem.GetComponent<Draggable>().SetPosition(ItemPositionClosed.position);
+            }
+        }
+
+        sprite.SetOff();
+
+        audio.PlayClickOff();
     }
 
 }

@@ -7,9 +7,14 @@ public class Lever : MonoBehaviour
 
     public bool On = false;
 
+    private LeverAudio audio;
+
     public void Start()
     {
+        audio = GetComponent<LeverAudio>();
+
         UpdateLever();
+
     }
 
     public void Update()
@@ -26,6 +31,13 @@ public class Lever : MonoBehaviour
         else size.y = Mathf.Abs(size.y);
 
         transform.localScale = size;
+
+    }
+
+    private void PlayClick()
+    {
+        if (On) audio.PlayClickOn();
+        else audio.PlayClickOff();
     }
 
     public void Toogle()
@@ -33,6 +45,7 @@ public class Lever : MonoBehaviour
         On = !On;
 
         UpdateLever();
+        PlayClick();
     }
 
     public void TurnOn()
