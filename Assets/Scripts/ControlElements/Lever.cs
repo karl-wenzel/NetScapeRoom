@@ -7,11 +7,11 @@ public class Lever : MonoBehaviour
 
     public bool On = false;
 
-    private LeverAudio audio;
+    private LeverAudio m_audio;
 
     public void Start()
     {
-        audio = GetComponent<LeverAudio>();
+        m_audio = GetComponent<LeverAudio>();
 
         UpdateLever();
 
@@ -36,8 +36,8 @@ public class Lever : MonoBehaviour
 
     private void PlayClick()
     {
-        if (On) audio.PlayClickOn();
-        else audio.PlayClickOff();
+        if (On) m_audio.PlayClickOn();
+        else m_audio.PlayClickOff();
     }
 
     public void Toogle()

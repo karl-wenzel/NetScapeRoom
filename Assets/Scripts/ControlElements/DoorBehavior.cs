@@ -10,7 +10,7 @@ public class DoorBehavior : MonoBehaviour
     public float RotationSpeed;
 
     private Vector3 CurrentRotationTarget;
-    private bool IsOpen = false;
+    //private bool IsOpen = false;
 
 
     public void Update()
@@ -20,14 +20,16 @@ public class DoorBehavior : MonoBehaviour
 
     public void OpenDoor()
     {
-        IsOpen = true;
+        //IsOpen = true;
         CurrentRotationTarget = RotationOpen;
+        levelCompleted.me.LevelComplete();
+        PlayerTimerController.me.StopTime();
     }
 
 
     public void CloseDoor()
     {
-        IsOpen = false;
+        //IsOpen = false;
         CurrentRotationTarget = RotationClosed;
     }
 

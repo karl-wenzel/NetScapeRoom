@@ -10,7 +10,7 @@ public class CommodeBehavior : MonoBehaviour
 
     public GameObject ContainedItem;
 
-    public LeverAudio audio;
+    public LeverAudio leverAudio;
 
 
     private Vector3 TargetPosition;
@@ -28,6 +28,7 @@ public class CommodeBehavior : MonoBehaviour
         ContainedItem.GetComponent<SpriteRenderer>().sortingOrder = 1;
 
         sprite = GetComponent<ToogleSprites>();
+        leverAudio = GetComponent<LeverAudio>();
     }
 
     public void Update()
@@ -57,7 +58,7 @@ public class CommodeBehavior : MonoBehaviour
 
         sprite.SetOn();
 
-        audio.PlayClickOn();
+        leverAudio.PlayClickOn();
     }
 
     public void Close()
@@ -78,7 +79,7 @@ public class CommodeBehavior : MonoBehaviour
 
         sprite.SetOff();
 
-        audio.PlayClickOff();
+        leverAudio.PlayClickOff();
     }
 
 }

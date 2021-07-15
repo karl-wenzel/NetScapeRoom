@@ -4,15 +4,4 @@ using UnityEngine;
 
 public class NeuronDragMinigame : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("Helloooo");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

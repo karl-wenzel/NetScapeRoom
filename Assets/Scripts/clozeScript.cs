@@ -121,7 +121,7 @@ public class clozeScript : MonoBehaviour
         {
             answer_2 = answer.none;
         }
-        else if (index_2 == 1)
+        else if (index_2 == 2)
         {
             answer_2 = answer.rigth;
         }
@@ -163,7 +163,7 @@ public class clozeScript : MonoBehaviour
         {
             answer_5 = answer.none;
         }
-        else if (index_5 == 3)
+        else if (index_5 == 5)
         {
             answer_5 = answer.rigth;
         }

@@ -6,22 +6,22 @@ public class DraggableUINeuron : MonoBehaviour
 {
     public float DragSpeed = 10;
 
-    private bool IsDragging = false;
+    //private bool IsDragging = false;
 
     private Vector3 TargetPosition;
 
 
     private static int ColliderVarianz = 5;
 
-    private int Layer = 0;
+    //private int Layer = 0;
 
-    private int NeuronRow = 0;
+    //private int NeuronRow = 0;
 
 
     private static int xLayer1 = -67;
-    private static int xLayer2 = 0;
-    private static int xLayer3 = 0;
-    private static int xLayer4 = 0;
+    //private static int xLayer2 = 0;
+    //private static int xLayer3 = 0;
+    //private static int xLayer4 = 0;
 
     private static int yRow1 =11;
     private static int yRow2 = -8;
@@ -72,7 +72,6 @@ public class DraggableUINeuron : MonoBehaviour
 
     public void BeginDrag()
     {
-        IsDragging = true;
         TargetPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
     }
 
@@ -83,7 +82,6 @@ public class DraggableUINeuron : MonoBehaviour
 
     public void EndDrag()
     {
-        IsDragging = false;
     }
 
 

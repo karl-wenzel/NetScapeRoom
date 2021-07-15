@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class Draggable : MonoBehaviour
 {
@@ -19,6 +16,7 @@ public class Draggable : MonoBehaviour
 
     [Header("Item Inspector")]
     public GameObject inspector;
+    [TextArea]
     public string Description;
 
 
@@ -37,8 +35,12 @@ public class Draggable : MonoBehaviour
     private Vector3 OriginalScale;
     private Vector3 CurrentScale;
 
-    private ItemAudio audio;
+    private ItemAudio m_audio;
 
+    public GameObject DestroyOnClick;
+    public GameObject EnableOnClick;
+    public GameObject DestroyOnDrag;
+    public bool IsTutorialStick;
 
     public void Start()
     {
@@ -47,7 +49,7 @@ public class Draggable : MonoBehaviour
         OriginalScale = transform.localScale;
         CurrentScale = OriginalScale;
 
-        audio = GetComponent<ItemAudio>();
+        m_audio = GetComponent<ItemAudio>();
     }
 
     public void Update()
@@ -66,10 +68,15 @@ public class Draggable : MonoBehaviour
 
     public void Click()
     {
-
+        if (DestroyOnClick != null) Destroy(DestroyOnClick);
         GameObject newInspector = Instantiate(inspector, new Vector3(0, 0, 0), Quaternion.identity);
         newInspector.GetComponent<HoldsText>().SetDescription(Description);
         newInspector.transform.SetParent(GameObject.Find("Canvas").transform, false);
+        if (IsTutorialStick)
+        {
+            if (EnableOnClick != null) EnableOnClick.SetActive(true);
+            EnableDrag = true;
+        }
 
     }
 
@@ -81,12 +88,13 @@ public class Draggable : MonoBehaviour
 
         CurrentScale = OriginalScale * DragScaleMultiplier;
 
-        audio.PlayPickUp();
+        m_audio.PlayPickUp();
     }
 
     public void Drag()
     {
         if (!EnableDrag) return;
+        if (DestroyOnDrag != null) Destroy(DestroyOnDrag);
 
         Vector3 MouseOffset = Camera.main.ScreenToWorldPoint(Input.mousePosition) - StartMousePosition;
         MouseOffset.z = 0f;
@@ -165,8 +173,8 @@ public class Draggable : MonoBehaviour
         LastPosition = transform.position;
 
 
-        if (SelectedItemSlot == null) audio.PlayDrop();
-        else audio.PlayInsert();
+        if (SelectedItemSlot == null) m_audio.PlayDrop();
+        else m_audio.PlayInsert();
     }
 
     public void SetItemSlot(ItemSlotManager Slot)

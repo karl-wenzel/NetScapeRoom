@@ -5,6 +5,7 @@ using TMPro;
 
 public class PlayerTimerController : MonoBehaviour
 {
+    public static PlayerTimerController me;
     [Header("Timer Settings")]
     public bool ShowTimers = true;
     public bool StartOnStart = true;
@@ -17,6 +18,7 @@ public class PlayerTimerController : MonoBehaviour
 
     void Start()
     {
+        me = this;
         if (StartOnStart)
         {
             StartTime();

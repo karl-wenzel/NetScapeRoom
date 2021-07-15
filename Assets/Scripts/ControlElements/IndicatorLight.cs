@@ -11,7 +11,7 @@ public class IndicatorLight : MonoBehaviour
     public Sprite SpriteOff;
     public Sprite SpriteOn;
 
-    public Light2D light;
+    Light2D m_light;
 
     public bool On = false;
 
@@ -23,6 +23,7 @@ public class IndicatorLight : MonoBehaviour
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        m_light = GetComponentInChildren<Light2D>();
     }
 
     public void UpdateLight()
@@ -30,14 +31,14 @@ public class IndicatorLight : MonoBehaviour
         if (On)
         {
             spriteRenderer.sprite = SpriteOn;
-            light.color = ColorOn;
-            light.intensity = 20;
+            m_light.color = ColorOn;
+            m_light.intensity = 20;
         }
         else
         {
             spriteRenderer.sprite = SpriteOff;
-            light.color = ColorOff;
-            light.intensity = 1;
+            m_light.color = ColorOff;
+            m_light.intensity = 1;
         }
     }
 

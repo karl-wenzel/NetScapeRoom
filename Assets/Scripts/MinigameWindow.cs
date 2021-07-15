@@ -26,7 +26,7 @@ public class MinigameWindow : MonoBehaviour
         RotationCount++;
         Debug.Log("Rotating MinigameWindow " + MinigameName + " 90 Degrees.");
         rotater.TransitionToRotation(0, new Vector3(0f, 0f, (RotationCount % 4) * 90f));
-        if (InstantiateInUISpace) CorrectPosition();
+        //if (InstantiateInUISpace) CorrectPosition();
     }
 
     public void Quit()
@@ -51,6 +51,7 @@ public class MinigameWindow : MonoBehaviour
         Dragging = false;
     }
 
+    /*
     public bool CorrectPosition()
     {
         return false;
@@ -80,13 +81,14 @@ public class MinigameWindow : MonoBehaviour
         }
         return CorrectedSomething;
     }
+    */
 
     void Update()
     {
         if (Dragging)
         {
             transform.position = StartWindowPosition + ((InstantiateInUISpace ? Input.mousePosition : Camera.main.ScreenToWorldPoint(Input.mousePosition)) - StartMousePosition);
-            if (InstantiateInUISpace && CorrectPosition()) EndDrag();
+            //if (InstantiateInUISpace && CorrectPosition()) EndDrag();
         }
     }
 }

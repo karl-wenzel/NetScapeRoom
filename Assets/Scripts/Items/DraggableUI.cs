@@ -6,7 +6,6 @@ public class DraggableUI : MonoBehaviour
 {
     public float DragSpeed = 10;
 
-    private bool IsDragging = false;
 
     private Vector3 TargetPosition;
 
@@ -22,7 +21,6 @@ public class DraggableUI : MonoBehaviour
 
     public void BeginDrag()
     {
-        IsDragging = true;
         TargetPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
     }
 
@@ -33,7 +31,6 @@ public class DraggableUI : MonoBehaviour
 
     public void EndDrag()
     {
-        IsDragging = false;
     }
 
 

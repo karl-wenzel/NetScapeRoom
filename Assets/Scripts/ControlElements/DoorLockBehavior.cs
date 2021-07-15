@@ -9,7 +9,7 @@ public class DoorLockBehavior : MonoBehaviour
 
     public ItemSlotManager ItemSlot;
 
-    private bool Unlocked = false;
+    //private bool Unlocked = false;
 
 
     public bool IsUnlocked()

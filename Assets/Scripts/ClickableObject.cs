@@ -6,10 +6,17 @@ public class ClickableObject : MonoBehaviour
 {
     public GameEventStartMinigame[] StartMinigames;
     public int PlayerIndex;
+    public bool Clickable = true;
 
     public void Clicked() {
+        if (!Clickable) return;
         Debug.Log("Clicked on " + name);
         StartAvailableMinigames();
+    }
+
+    public void Activate() {
+        GetComponent<SpriteRenderer>().color = Color.white;
+        Clickable = true;
     }
 
     void StartAvailableMinigames() {

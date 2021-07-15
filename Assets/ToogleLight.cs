@@ -8,7 +8,7 @@ public class ToogleLight : MonoBehaviour
     public Color ColorOn;
     public Color ColorOff;
 
-    public Light2D light;
+    public Light2D m_light;
 
 
     private bool On;
@@ -17,20 +17,20 @@ public class ToogleLight : MonoBehaviour
     {
         On = !On;
 
-        if (On) light.color = ColorOn;
-        else light.color = ColorOff;
+        if (On) m_light.color = ColorOn;
+        else m_light.color = ColorOff;
     }
 
     public void SetOn()
     {
         On = true;
-        light.color = ColorOn;
+        m_light.color = ColorOn;
     }
 
     public void SetOff()
     {
         On = false;
-        light.color = ColorOff;
+        m_light.color = ColorOff;
     }
 
 }

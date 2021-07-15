@@ -11,7 +11,7 @@ public class GlowController : MonoBehaviour
 
     private float GlowIntensity = 1f;
 
-    private Light2D light;
+    private Light2D m_light;
 
     private bool Trigger = false;
 
@@ -23,7 +23,7 @@ public class GlowController : MonoBehaviour
 
     public void Start()
     {
-        light = GetComponent<Light2D>();
+        m_light = GetComponent<Light2D>();
     }
 
 
@@ -46,6 +46,6 @@ public class GlowController : MonoBehaviour
         }
 
 
-        light.intensity = GlowIntensity;
+        m_light.intensity = GlowIntensity;
     }
 }

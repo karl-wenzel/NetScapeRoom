@@ -26,10 +26,16 @@ public class ItemSlotManager : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Color CurrentColor;
 
+    public ClickableObject[] EnableClickable;
+
 
 
     public void Start()
     {
+        if (ItemPosition == null) {
+            ItemPosition = transform;
+        }
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (CanChangeColor) CurrentColor = ColorIsEmpty;
 
@@ -91,6 +97,11 @@ public class ItemSlotManager : MonoBehaviour
         ContainedItem.SetPosition(ItemPosition.position);
         ContainedItem.SetCurrentScale(ItemPosition.localScale);
         IsEmpty = false;
+
+        foreach (ClickableObject item in EnableClickable)
+        {
+            item.Activate();
+        }
 
         if (IsLocked)
             LockItem();

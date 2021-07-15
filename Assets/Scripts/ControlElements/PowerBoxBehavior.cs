@@ -6,16 +6,16 @@ public class PowerBoxBehavior : MonoBehaviour
 {
     public ItemSlotManager[] Itemslots;
     public Lever Lever;
-    public IndicatorLight light;
+    public IndicatorLight m_light;
 
     private bool IsOn = false;
 
     public AudioClip FailedLever;
-    private AudioSource audio;
+    private AudioSource m_audio;
 
     public void Start()
     {
-        audio = GetComponent<AudioSource>();
+        m_audio = GetComponent<AudioSource>();
     }
 
     public void Update()
@@ -24,14 +24,14 @@ public class PowerBoxBehavior : MonoBehaviour
 
         if (Lever.Check() && CheckFuses())
         {
-            light.TurnOn();
+            m_light.TurnOn();
             IsOn = true;
         }
         else if(Lever.Check())
         {
             IsOn = false;
             Lever.TurnOff();
-            light.TurnOff();
+            m_light.TurnOff();
             PlayFail();
         }
 
@@ -44,7 +44,7 @@ public class PowerBoxBehavior : MonoBehaviour
 
    private void PlayFail()
     {
-        audio.PlayOneShot(FailedLever);
+        m_audio.PlayOneShot(FailedLever);
     }
 
 

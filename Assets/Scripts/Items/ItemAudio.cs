@@ -20,6 +20,7 @@ public class ItemAudio : MonoBehaviour
 
     public void PlayPickUp()
     {
+        if (PickUp.Length == 0) return;
         int randomClip = Random.Range(0, PickUp.Length);
 
         audioSource.PlayOneShot(PickUp[randomClip]);
@@ -28,6 +29,8 @@ public class ItemAudio : MonoBehaviour
 
     public void PlayDrop()
     {
+        if (Drop.Length == 0) return;
+
         int randomClip = Random.Range(0, Drop.Length);
 
         audioSource.PlayOneShot(Drop[randomClip]);
@@ -35,6 +38,8 @@ public class ItemAudio : MonoBehaviour
 
     public void PlayInsert()
     {
+        if (Insert.Length == 0) return;
+
         int randomClip = Random.Range(0, Insert.Length);
 
         audioSource.PlayOneShot(Insert[randomClip]);

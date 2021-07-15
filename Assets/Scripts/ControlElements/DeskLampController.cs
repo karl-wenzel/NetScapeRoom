@@ -13,24 +13,30 @@ public class DeskLampController : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Color LightColor;
 
-    public Light2D light;
+    private Light2D m_light;
 
     private bool IsOn;
     private Color TargetColor;
 
-    private LeverAudio audio;
+    private LeverAudio m_audio;
 
     public void Start()
     {
-        audio = GetComponent<LeverAudio>();
+        m_audio = GetComponent<LeverAudio>();
+        m_light = GetComponentInChildren<Light2D>();
 
         IsOn = InitialState;
         UpdateSprite();
     }
 
-    public void Update()
-    {
-        light.color = Color.Lerp(light.color, TargetColor, Time.deltaTime * 30);
+
+    float StartedLerping = 0.0f;
+    IEnumerator LerpLightColor() {
+        while (StartedLerping + 1f > Time.time) {
+            m_light.color = Color.Lerp(m_light.color, TargetColor, Time.deltaTime * 30);
+            yield return null;
+        }
+        m_light.color = TargetColor;
     }
 
     public void UpdateSprite()
@@ -39,18 +45,20 @@ public class DeskLampController : MonoBehaviour
         {
             spriteRenderer.sprite = SpriteOn;
             TargetColor = LightColor;
+            StartCoroutine(LerpLightColor());
         }
         else
         {
             spriteRenderer.sprite = SpriteOff;
             TargetColor = new Vector4(0f,0f,0f,1f);
+            StartCoroutine(LerpLightColor());
         }
     }
 
     public void PlayClickSound()
     {
-        if (IsOn) audio.PlayClickOn();
-        else audio.PlayClickOff();
+        if (IsOn) m_audio.PlayClickOn();
+        else m_audio.PlayClickOff();
 
     }
 
