@@ -21,6 +21,11 @@ public class MinigameWindow : MonoBehaviour
 
     int RotationCount = 0;
 
+    [Header("Audio")]
+    private AudioSource audioSource;
+    public AudioClip PopUp;
+    public AudioClip Close;
+
     public void Rotate()
     {
         RotationCount++;
@@ -33,6 +38,7 @@ public class MinigameWindow : MonoBehaviour
     {
         Debug.Log("Closing MinigameWindow " + MinigameName + ".");
         SpritePlopUpAnimator.PlayAnimation(1);
+        if (Close != null) audioSource.PlayOneShot(Close);
         Destroy(gameObject, 0.2f);
     }
 
@@ -82,6 +88,13 @@ public class MinigameWindow : MonoBehaviour
         return CorrectedSomething;
     }
     */
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+
+        if(PopUp != null) audioSource.PlayOneShot(PopUp);
+    }
 
     void Update()
     {

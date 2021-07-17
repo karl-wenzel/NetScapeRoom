@@ -17,6 +17,9 @@ public class clozeScript : MonoBehaviour
 
     private int tries = 0;
 
+
+    public MinigameAudio audio;
+
     public enum answer
         {
             none,
@@ -193,9 +196,13 @@ public class clozeScript : MonoBehaviour
             reaction_1(answer_4, Dropdown_4);
             reaction_1(answer_5, Dropdown_5);
 
+            audio.PlayAnswerRight();
+
             controller.SuccessfulMinigame();
         } else
         {
+            audio.PlayAnswerWrong();
+
             output.text = "Leider falsch. Versuch es noch einmal!";
         }
 

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8527348173120755011}
   - component: {fileID: 7032103878040726684}
   - component: {fileID: 6081523763385882673}
+  - component: {fileID: -8303228472912673538}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -104,9 +105,16 @@ MonoBehaviour:
   DragSpeed: 20
   ScaleSpeed: 20
   DragScaleMultiplier: 1.2
-  inspector: {fileID: 0}
+  Clickable: {fileID: -8303228472912673538}
+  inspector:
+    EventName: Start Inspector
+    MinigamePrefab: {fileID: 319723388469828935, guid: 12bbeda09ab9ecc46b5c73f9512d2307, type: 3}
   Description: 
   TargetPosition: {x: 0, y: 0, z: 0}
+  DestroyOnClick: {fileID: 0}
+  EnableOnClick: {fileID: 0}
+  DestroyOnDrag: {fileID: 0}
+  IsTutorialStick: 0
 --- !u!114 &8527348173120755016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,7 +331,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b0007207a3c3546807785e2d723be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Volume: 0
   PickUp:
   - {fileID: 0}
   Drop:
   - {fileID: 0}
+  Insert: []
+--- !u!114 &-8303228472912673538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8527348173120755017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11a7522ab5691a042a2f375df790d737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartMinigames:
+  - EventName: 
+    MinigamePrefab: {fileID: 0}
+  PlayerIndex: 0
+  Clickable: 1

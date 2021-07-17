@@ -8,6 +8,7 @@ public class ItemSlotManager : MonoBehaviour
     public bool IsLocked = true;
     public Draggable[] Accepts;
     public Draggable DefaultItem;
+    public bool HideOnContact = false;
 
     [Header("Coloring")]
     public bool CanChangeColor = true;
@@ -26,7 +27,6 @@ public class ItemSlotManager : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Color CurrentColor;
 
-    public ClickableObject[] EnableClickable;
 
 
 
@@ -90,18 +90,16 @@ public class ItemSlotManager : MonoBehaviour
 
     public void AddItem(Draggable Item)
     {
-
         ContainedItem = Item;
         ContainedItem.SetItemSlot(this);
-        ContainedItem.SetLayer("ControlElements", 1);
+
+        if(HideOnContact) ContainedItem.SetLayer("Background", 1);
+        else ContainedItem.SetLayer("ControlElements", 1);
+
         ContainedItem.SetPosition(ItemPosition.position);
         ContainedItem.SetCurrentScale(ItemPosition.localScale);
         IsEmpty = false;
 
-        foreach (ClickableObject item in EnableClickable)
-        {
-            item.Activate();
-        }
 
         if (IsLocked)
             LockItem();

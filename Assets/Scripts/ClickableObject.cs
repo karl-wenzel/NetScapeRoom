@@ -7,6 +7,7 @@ public class ClickableObject : MonoBehaviour
     public GameEventStartMinigame[] StartMinigames;
     public int PlayerIndex;
     public bool Clickable = true;
+    public bool EnableRotation = false;
 
     public void Clicked() {
         if (!Clickable) return;
@@ -17,6 +18,11 @@ public class ClickableObject : MonoBehaviour
     public void Activate() {
         GetComponent<SpriteRenderer>().color = Color.white;
         Clickable = true;
+    }
+
+    public void AddMinigame(GameEventStartMinigame minigame)
+    {
+        StartMinigames[0] = minigame;
     }
 
     void StartAvailableMinigames() {
@@ -33,10 +39,15 @@ public class ClickableObject : MonoBehaviour
                 NewMinigame.transform.localScale = new Vector3(scaleFactor, scaleFactor, 1f);
             }
             MinigameWindow NewMinigameWindow = NewMinigame.GetComponent<MinigameWindow>();
-            for (int i = 0; i < PlayerIndex; i++)
+
+            if (EnableRotation)
             {
-                NewMinigameWindow.Rotate();
+                for (int i = 0; i < PlayerIndex; i++)
+                {
+                    NewMinigameWindow.Rotate();
+                }
             }
+
             MinigameController NewMinigameController = NewMinigameWindow.minigameController;
             NewMinigameController.MinigameSource = gameObject;
         }

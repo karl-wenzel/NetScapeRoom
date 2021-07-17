@@ -8,8 +8,12 @@ public class CheckLeverValue : MonoBehaviour
     public MinigameController controller;
     public Slider slider;
 
+    public MinigameAudio audio;
+
     public void CheckValue() {
         if (slider.value == 1f) {
+            audio.PlayAnswerRight();
+
             controller.SuccessfulMinigame();
         }
     }

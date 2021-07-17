@@ -9,6 +9,12 @@ public class GlowController : MonoBehaviour
 
     public DeskLampController lamp;
 
+    [Header("Item Inspector")]
+    public ClickableObject Clickable;
+    public GameEventStartMinigame inspector;
+    [TextArea]
+    public string Description;
+
     private float GlowIntensity = 1f;
 
     private Light2D m_light;
@@ -47,5 +53,15 @@ public class GlowController : MonoBehaviour
 
 
         m_light.intensity = GlowIntensity;
+    }
+
+
+    public void OpenInspector()
+    {
+        if (lamp.CheckIfOn()) return;
+
+        inspector.MinigamePrefab.GetComponent<HoldsText>().SetDescription(Description);
+        Clickable.AddMinigame(inspector);
+        Clickable.Clicked();
     }
 }

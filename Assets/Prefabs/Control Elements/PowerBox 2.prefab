@@ -1017,10 +1017,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.92, y: 2.69}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1291479874
@@ -1041,7 +1041,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.192, y: 0.269}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 1.92, y: 2.69}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1304,7 +1304,6 @@ MonoBehaviour:
   ColorOn: {r: 0, g: 1, b: 0, a: 1}
   SpriteOff: {fileID: 21300000, guid: ae7b5b03561d6a54dbed9d8b950e5a6d, type: 3}
   SpriteOn: {fileID: 21300000, guid: 27de55f4cad1eb54ea31912b5f20e40e, type: 3}
-  m_light: {fileID: 0}
   On: 0
 --- !u!1 &8062439703014772454
 GameObject:
@@ -1390,7 +1389,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 7.5, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1414,7 +1413,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.75, y: 1}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 7.5, y: 10}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1535,7 +1534,9 @@ MonoBehaviour:
   - {fileID: 5415575191429787751}
   Lever: {fileID: 1291479872}
   m_light: {fileID: 539721067}
+  particleSystem: []
   FailedLever: {fileID: 8300000, guid: 4bb5f7c93616aae41be29a597a23902a, type: 3}
+  TurnOn: {fileID: 0}
 --- !u!1001 &2104739405509228091
 PrefabInstance:
   m_ObjectHideFlags: 0

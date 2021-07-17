@@ -15,7 +15,8 @@ public class Draggable : MonoBehaviour
     public float DragScaleMultiplier;
 
     [Header("Item Inspector")]
-    public GameObject inspector;
+    public ClickableObject Clickable;
+    public GameEventStartMinigame inspector;
     [TextArea]
     public string Description;
 
@@ -34,6 +35,7 @@ public class Draggable : MonoBehaviour
 
     private Vector3 OriginalScale;
     private Vector3 CurrentScale;
+    private Vector3 TargetScale;
 
     private ItemAudio m_audio;
 
@@ -47,7 +49,8 @@ public class Draggable : MonoBehaviour
         TargetPosition = transform.position;
 
         OriginalScale = transform.localScale;
-        CurrentScale = OriginalScale;
+        CurrentScale = transform.localScale;
+        TargetScale = OriginalScale * DragScaleMultiplier;
 
         m_audio = GetComponent<ItemAudio>();
     }
@@ -55,7 +58,6 @@ public class Draggable : MonoBehaviour
     public void Update()
     {
         transform.localPosition = Vector3.Lerp(transform.localPosition, TargetPosition, Time.deltaTime * DragSpeed);
-        transform.localScale = Vector3.Lerp(transform.localScale, CurrentScale, Time.deltaTime * ScaleSpeed);
     }
 
     public void SetPosition(Vector3 pos)
@@ -69,9 +71,9 @@ public class Draggable : MonoBehaviour
     public void Click()
     {
         if (DestroyOnClick != null) Destroy(DestroyOnClick);
-        GameObject newInspector = Instantiate(inspector, new Vector3(0, 0, 0), Quaternion.identity);
-        newInspector.GetComponent<HoldsText>().SetDescription(Description);
-        newInspector.transform.SetParent(GameObject.Find("Canvas").transform, false);
+
+        OpenInspector();
+
         if (IsTutorialStick)
         {
             if (EnableOnClick != null) EnableOnClick.SetActive(true);
@@ -86,7 +88,9 @@ public class Draggable : MonoBehaviour
         StartWindowPosition = transform.position;
         LastPosition = transform.position;
 
-        CurrentScale = OriginalScale * DragScaleMultiplier;
+        CurrentScale = OriginalScale;
+        TargetScale = OriginalScale * DragScaleMultiplier;
+        StartCoroutine("LerpScale");
 
         m_audio.PlayPickUp();
     }
@@ -105,9 +109,10 @@ public class Draggable : MonoBehaviour
 
     public void EndDrag()
     {
-        CurrentScale = OriginalScale;
+        CurrentScale = OriginalScale * DragScaleMultiplier;
+        TargetScale = OriginalScale;
+        StartCoroutine("LerpScale");
 
-        
 
         this.GetComponent<BoxCollider2D>().enabled = false;
 
@@ -162,12 +167,10 @@ public class Draggable : MonoBehaviour
         }
 
 
-
-
         if (!IsDragging) Click();
 
         IsDragging = false;
-
+        
 
         if (IsColliding) TargetPosition = LastPosition;
         LastPosition = transform.position;
@@ -198,6 +201,27 @@ public class Draggable : MonoBehaviour
     public void SetCurrentScale(Vector3 scale)
     {
         CurrentScale = scale;
+    }
+
+    public void OpenInspector()
+    {
+        inspector.MinigamePrefab.GetComponent<HoldsText>().SetDescription(Description);
+        Clickable.AddMinigame(inspector);
+        Clickable.Clicked();
+    }
+
+    IEnumerator LerpScale()
+    {
+        float progress = 0;
+
+        while (progress <= 1)
+        {
+            transform.localScale = Vector3.Lerp(CurrentScale, TargetScale, progress);
+            progress += Time.deltaTime * ScaleSpeed;
+            yield return null;
+        }
+        transform.localScale = TargetScale;
+
     }
 
 

@@ -30,6 +30,8 @@ public class NeuronDragSignal : MonoBehaviour
 
     private GameObject signalStartPosition;
 
+    public MinigameAudio audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -166,12 +168,17 @@ public class NeuronDragSignal : MonoBehaviour
             {
                 // Richtiger Pfad wurde genommen
                 output.text = "Super! Ihr habt den richtigen Pfad gefunden.";
-                
+
+                audio.PlayAnswerRight();
+
                 controller.SuccessfulMinigame();
             }
             else
             {
                 output.text = "Falscher Pfad, bitte erneut versuchen!";
+
+                audio.PlayAnswerWrong();
+
                 Start();
             }
         }

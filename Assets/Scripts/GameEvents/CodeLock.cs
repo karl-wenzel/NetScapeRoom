@@ -16,6 +16,18 @@ public class CodeLock : MonoBehaviour
 
     public HoldsText Text;
 
+    AudioSource audio;
+
+    public MinigameAudio minigameAudio;
+
+    public AudioClip ClickDigit;
+    public AudioClip ClickCheck;
+
+
+    public void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
 
     public void Update()
     {
@@ -27,12 +39,17 @@ public class CodeLock : MonoBehaviour
         if (CodeTextValue.Length >= 4) return;
 
         CodeTextValue += d;
+
+        if (ClickDigit != null) audio.PlayOneShot(ClickDigit);
     }
 
     private void DisplayWrong()
     {
         CodeText.color = Color.red;
         CodeTextValue = "FALSCH";
+
+        minigameAudio.PlayAnswerWrong();
+
         Invoke("Reset", 2);
     }
 
@@ -46,11 +63,9 @@ public class CodeLock : MonoBehaviour
     {
         CodeText.color = Color.green;
         CodeTextValue = "RICHTIG";
-        Invoke("QuitMinigame", 2);
-    }
 
-    private void QuitMinigame()
-    {
+        minigameAudio.PlayAnswerRight();
+
         controller.SuccessfulMinigame();
     }
 

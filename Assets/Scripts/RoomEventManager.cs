@@ -12,6 +12,8 @@ public class RoomEventManager : MonoBehaviour
     public ItemSlotManager Vitrine2;
     public ItemSlotManager Vitrine3;
 
+    private bool DoorAlreadyOpen = false;
+
 
 
 
@@ -22,9 +24,10 @@ public class RoomEventManager : MonoBehaviour
 
     void Update()
     {
-        if (ExitDoorLock.IsUnlocked() && PowerBox.HasPower())
+        if (ExitDoorLock.IsUnlocked() && PowerBox.HasPower() && !DoorAlreadyOpen)
         {
             ExitDoor.OpenDoor();
+            DoorAlreadyOpen = true;
         }
     }
 

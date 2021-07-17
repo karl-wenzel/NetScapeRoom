@@ -4,38 +4,30 @@ using UnityEngine;
 
 public class DoorBehavior : MonoBehaviour
 {
-    public Vector3 RotationClosed;
-    public Vector3 RotationOpen;
+    public AudioClip DoorOpen;
 
-    public float RotationSpeed;
+    private AudioSource audio;
 
-    private Vector3 CurrentRotationTarget;
-    //private bool IsOpen = false;
+    private Animator animator;
 
 
-    public void Update()
+    private void Start()
     {
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(CurrentRotationTarget), Time.deltaTime * RotationSpeed);
+        audio = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
     }
+
 
     public void OpenDoor()
     {
-        //IsOpen = true;
-        CurrentRotationTarget = RotationOpen;
-        levelCompleted.me.LevelComplete();
+        Invoke("LevelComplete", 3);
         PlayerTimerController.me.StopTime();
+        animator.SetBool("Open", true);
+        audio.PlayOneShot(DoorOpen);
     }
 
-
-    public void CloseDoor()
+    private void LevelComplete()
     {
-        //IsOpen = false;
-        CurrentRotationTarget = RotationClosed;
-    }
-
-    public void OnCollisionEnter(Collision c)
-    {
-        Debug.Log("Open Door");
-        OpenDoor();
+        levelCompleted.me.LevelComplete();
     }
 }
