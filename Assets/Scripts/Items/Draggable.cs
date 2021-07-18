@@ -10,7 +10,7 @@ public class Draggable : MonoBehaviour
 
     [Header("Visuals")]
     public float DragSpeed = 10;
-    public float ScaleSpeed = 20;
+    public float ScaleSpeed = 0.01f;
 
     public float DragScaleMultiplier;
 
@@ -137,20 +137,24 @@ public class Draggable : MonoBehaviour
                 {
                     Debug.Log("Itemslot accepts item");
                     SelectedItemSlot.AddItem(this);
+                    TargetScale = SelectedItemSlot.GetItemScale();
+                    StartCoroutine("LerpScale");
 
                 }
                 else if (SelectedItemSlot.ContainsItem(this))
                 {
                     Debug.Log("Item remains in the same Itemslot");
                     TargetPosition = SelectedItemSlot.GetItemPosition();
-                    CurrentScale = SelectedItemSlot.GetItemScale();
+                    TargetScale = SelectedItemSlot.GetItemScale();
+                    StartCoroutine("LerpScale");
                 }
                 else if(LastItemSlot != null && LastItemSlot.AcceptsNewItem(this))
                 {
                     Debug.Log("Item send back to previous Itemslot");
                     if(LastItemSlot != null) SelectedItemSlot = LastItemSlot;
                     TargetPosition = SelectedItemSlot.GetItemPosition();
-                    CurrentScale = SelectedItemSlot.GetItemScale();
+                    TargetScale = SelectedItemSlot.GetItemScale();
+                    StartCoroutine("LerpScale");
 
                 }
                 else

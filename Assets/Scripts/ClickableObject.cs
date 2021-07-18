@@ -35,8 +35,9 @@ public class ClickableObject : MonoBehaviour
                 Quaternion.identity);
             if (IsUIGame) {
                 NewMinigame.transform.SetParent(SpawnPositionController.spawnPositionControllerInstance.GetCanvas().transform);
-                float scaleFactor = (Screen.height + Screen.width) / 1200f;
-                NewMinigame.transform.localScale = new Vector3(scaleFactor, scaleFactor, 1f);
+                float scaleFactor = (Screen.height + Screen.width) / 3000f;
+                Vector3 scale = NewMinigame.transform.localScale * scaleFactor;
+                NewMinigame.transform.localScale = scale;
             }
             MinigameWindow NewMinigameWindow = NewMinigame.GetComponent<MinigameWindow>();
 

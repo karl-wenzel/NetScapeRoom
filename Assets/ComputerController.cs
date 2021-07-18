@@ -9,6 +9,9 @@ public class ComputerController : MonoBehaviour
     private ItemSlotManager ItemSlot;
     private ClickableObject MinigameStarter;
 
+    public bool HasUsb = false;
+
+    private bool AlreadyCompletedMinigame = false;
     private bool MinigameRunning = false;
 
     void Start()
@@ -21,20 +24,23 @@ public class ComputerController : MonoBehaviour
     {
         if (!ItemSlot.CheckIfEmpty() && ! MinigameRunning)
         {
+            HasUsb = true;
             Invoke("StartMinigame", 1);
-            MinigameRunning = true;
         }
 
     }
 
-    private void StartMinigame()
+    public void StartMinigame()
     {
+        if (!HasUsb || AlreadyCompletedMinigame) return;
         MinigameStarter.Clicked();
+        MinigameRunning = true;
     }
 
     // Update is called once per frame
     public void SuccessfulMinigame()
     {
+        AlreadyCompletedMinigame = true;
 
         foreach (ClickableObject item in EnableClickable)
         {
