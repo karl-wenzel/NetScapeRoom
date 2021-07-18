@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 using TMPro;
 
 public class PlayerTimerController : MonoBehaviour
@@ -10,8 +11,9 @@ public class PlayerTimerController : MonoBehaviour
     public bool ShowTimers = true;
     public bool StartOnStart = true;
     [HideInInspector]
-    public float CurrentGameTime = 0f;
+    public static float CurrentGameTime = 0f;
     public float MaxGameTime = 999f;
+    public int MaxGameTimeInMinutes = 30;
     bool Counting;
     [Header("References To Visuals")]
     public TMP_Text[] PlayerTimerTexts;
@@ -55,14 +57,17 @@ public class PlayerTimerController : MonoBehaviour
 
     void CheckTime()
     {
-        if (CurrentGameTime > MaxGameTime)
+        if (Mathf.FloorToInt(CurrentGameTime / 60f) > MaxGameTimeInMinutes)
         {
             StopTime();
             Debug.Log("Game Over. Time is up.");
         }
+
+        PlayerPrefs.SetFloat("Time", CurrentGameTime);
+
         foreach (TMP_Text playerCountTxt in PlayerTimerTexts)
         {
-            playerCountTxt.text = "" + Mathf.FloorToInt(CurrentGameTime / 60f) + ":" + Mathf.FloorToInt(CurrentGameTime % 60f);
+            playerCountTxt.text = "" + TimeSpan.FromSeconds(CurrentGameTime).ToString(@"mm\:ss");
         }
     }
 }

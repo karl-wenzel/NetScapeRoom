@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
 {
     public Slider VolumeSlider;
 
+    private bool SkipTutorial = false;
+
 
     private void Start()
     {
@@ -16,7 +18,15 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (!SkipTutorial)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+        }
+        
     }
 
     public void QuitGame()
@@ -27,6 +37,11 @@ public class MainMenu : MonoBehaviour
     public void SetVolume()
     {
         AudioListener.volume = VolumeSlider.value;
+    }
+
+    public void ToogleSkipTutorial()
+    {
+        SkipTutorial = !SkipTutorial;
     }
 
 

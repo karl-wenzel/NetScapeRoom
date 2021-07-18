@@ -12,7 +12,11 @@ public class RoomEventManager : MonoBehaviour
     public ItemSlotManager Vitrine2;
     public ItemSlotManager Vitrine3;
 
+    public RoomComplete Complete;
+
     private bool DoorAlreadyOpen = false;
+
+    public static int NumRoomsCompleted = 0;
 
 
 
@@ -28,10 +32,14 @@ public class RoomEventManager : MonoBehaviour
         {
             ExitDoor.OpenDoor();
             DoorAlreadyOpen = true;
+            Invoke("RoomComplete", 4);
         }
     }
 
-    public void DoorUnlocked()
+    private void RoomComplete()
     {
+        NumRoomsCompleted++;
+        PlayerPrefs.SetInt("NumRoomsCompleted", NumRoomsCompleted);
+        Complete.SpawnNextButton();
     }
 }
