@@ -8,6 +8,14 @@ public class ComputerController : MonoBehaviour
 
     private ItemSlotManager ItemSlot;
     private ClickableObject MinigameStarter;
+    public GameEventStartMinigame Minigame;
+
+    [Header("Inspector")]
+    public ClickableObject Clickable;
+    public GameEventStartMinigame inspector;
+
+    [TextArea]
+    public string Description;
 
     public bool HasUsb = false;
 
@@ -30,9 +38,22 @@ public class ComputerController : MonoBehaviour
 
     }
 
+    public void StartDialoge()
+    {
+        inspector.MinigamePrefab.GetComponent<HoldsText>().SetDescription(Description);
+        Clickable.AddMinigame(inspector);
+        Clickable.Clicked();
+    }
+
     public void StartMinigame()
     {
-        if (!HasUsb || AlreadyCompletedMinigame) return;
+        if (AlreadyCompletedMinigame) return;
+        if (!HasUsb)
+        {
+            StartDialoge();
+            return;
+        }
+        MinigameStarter.AddMinigame(Minigame);
         MinigameStarter.Clicked();
         MinigameRunning = true;
     }

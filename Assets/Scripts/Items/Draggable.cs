@@ -53,10 +53,13 @@ public class Draggable : MonoBehaviour
         TargetScale = OriginalScale * DragScaleMultiplier;
 
         m_audio = GetComponent<ItemAudio>();
+
+        if (DestroyOnClick != null) DestroyOnClick.SetActive(false);
     }
 
     public void Update()
     {
+        if(DestroyOnClick != null && !DestroyOnClick.active && Time.time >= 20) DestroyOnClick.SetActive(true);
         transform.localPosition = Vector3.Lerp(transform.localPosition, TargetPosition, Time.deltaTime * DragSpeed);
     }
 

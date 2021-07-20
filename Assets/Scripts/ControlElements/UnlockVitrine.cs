@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class UnlockVitrine : MonoBehaviour
 {
-    public VitrineController Vitrine;
+    public VitrineController[] Vitrine;
 
     public void SuccessfulMinigame()
     {
-        Vitrine.Unlock();
+        foreach (VitrineController controller in Vitrine)
+        {
+            controller.Unlock();
+        }
     }
 }

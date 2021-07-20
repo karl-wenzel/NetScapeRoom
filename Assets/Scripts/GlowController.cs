@@ -5,6 +5,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class GlowController : MonoBehaviour
 {
+    public float MaxGlowIntensity = 1f;
     public float GlowFadeOutSpeed;
 
     public DeskLampController lamp;
@@ -24,11 +25,12 @@ public class GlowController : MonoBehaviour
 
     public void ResetGlowIntensity()
     {
-        GlowIntensity = 1f;
+        GlowIntensity = MaxGlowIntensity;
     }
 
     public void Start()
     {
+        ResetGlowIntensity();
         m_light = GetComponent<Light2D>();
     }
 
